@@ -1,0 +1,98 @@
+#fade {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: .30;
+	z-index: 9999;
+}
+.popup_block{
+	display: none;
+	background: #fff;
+	padding: 20px; 	
+	border: 20px solid #ddd;
+	float: left;
+	font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size:14px;
+   font-weight:semibold;
+   color:#585757;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.popup_block_acc{
+	display: none;
+	background: #fff;
+	padding: 20px; 	
+	border: 20px solid #ddd;
+	float: left;
+	font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size:20px;
+   font-weight:semibold;
+   color:#585757;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+img.btn_close {
+	float: right; 
+	margin:-30px -30px 0 0;
+	width:20px;
+    height:20px;
+    background-color:transparent;
+    background-size:20px 20px;
+    border:none;
+	opacity: .70;
+}
+
+img.btn_close:hover{
+	-moz-box-shadow: 0px 0px 3px #3659b7;
+	-o-box-shadow: 0px 0px 3px #3659b7;
+	-webkit-box-shadow: 0px 0px 3px #3659b7;
+	opacity:1;
+}
+
+img.btn_suppr {
+	float: right; 
+	margin-top:0;
+	width:15px;
+    height:15px;
+    background-color:transparent;
+    background-size:15px 15px;
+    border:none;
+	opacity: .40;
+}
+
+img.btn_suppr:hover{
+	-moz-box-shadow: 0px 0px 3px #3659b7;
+	-o-box-shadow: 0px 0px 3px #3659b7;
+	-webkit-box-shadow: 0px 0px 3px #3659b7;
+	opacity:1;
+}
+
+.popup p {
+	padding: 5px 10px;
+	margin: 5px 0;
+}
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+	position: absolute;
+}
+*html .popup_block {
+	position: absolute;
+}

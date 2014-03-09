@@ -1,0 +1,335 @@
+<?PHP
+require_once("../../../relate/include/membersite_config.php");
+
+if(!$fgmembersite->CheckLogin())
+{
+    $fgmembersite->RedirectToURL("../index.php");
+    exit;
+}
+
+?>
+
+<xml version="1.0" encoding="UTF-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Accueil</title>
+		<link rel="STYLESHEET" type="text/CSS" href=../../bootstrap3/css/bootstrap.css media="screen" />
+		<link rel="STYLESHEET" type="text/CSS" href=../../bootstrap3/css/style-home.css media="screen" />
+		<style type="text/css">a:link{text-decoration:none}</style>
+		<style type="text/css">ul{list-style-type: none}</style>
+	</head>
+
+	<body>
+	<div id='fg_membersite_content'>
+		<div class="container" id="top_page">
+		
+		<div class="container">
+			<div class="page-header">
+				<div class="row">
+					<div class="col-md-8">
+						<h1><a href="accueil_etudiant.php">Relate</a></h1>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+							<input type="text" class="form-control" placeholder="Rechercher">
+							</div>
+							<!--<button type="submit" class="btn btn-default">Submit</button>-->
+						</form>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<h4><a href="../index.php">Se déconnecter</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<nav class="nav navbar-default" role="navigation">
+			<div class="navbar-header" id="border_grey">
+				<!--<ul class="nav navbar-nav">-->
+				<ul class="nav nav-justified">
+							<li><a href="profil_etudiant.html">
+								<ul><li class="menu" id="menu_profil"></li>
+									<li>PROFIL</li>
+								</ul>
+								</a>
+							</li>
+							<li><a href="offres.php">
+								<ul><li class="menu" id="menu_offres"></li>
+									<li>OFFRES</li>
+								</ul>
+								</a>
+							</li>
+							<li><a href="entreprises.php">
+								<ul><li class="menu" id="menu_entreprises"></li>
+									<li>ENTREPRISES</li>
+								</ul>
+								</a>
+							</li>
+							<li><a href="etudiants.php">
+								<ul><li class="menu" id="menu_etudiants"></li>
+									<li>ETUDIANTS</li>
+								</ul>
+								</a>
+							</li>
+							<li><a href="candidatures.html">
+								<ul><li class="menu" id="menu_candidatures"></li>
+									<li>CANDIDATURES</li>
+								</ul>
+								</a>
+							</li>
+							<li><a href="messages_recus.php">
+								<ul><li class="menu" id="menu_messages"></li>
+									<li>MESSAGES</li>
+								</ul>
+								</a>
+							</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<br>
+			
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="profil_etudiant.html">
+						<div class="well" id="padding0">
+							<img src=../../theme/img_etudiants.png class="img-responsive" alt="Responsive image" id="img_profil">
+							<div class="padding_well">
+								<h3 id="text_center">Mettez à jour votre profil</h3>
+								<p><h5>Editez votre profil étudiant et diffusez votre CV pour être contacté par les entreprises.</h5><p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="offres.html">
+						<div class="well" id="padding0">
+							<img src=../../theme/img_clavier.png class="img-responsive" alt="Responsive image" id="img_offres">
+							<div class="padding_well">
+								<h3 id="text_center">Recherchez une offre</h3>
+								<p><h5>Recherchez et postulez aux offres de stage ou d'emploi correspondant à vos critères.</h5><p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="entreprises.html">
+						<div class="well" id="padding0">
+							<img src=../../theme/img_entreprises.png class="img-responsive" alt="Responsive image" id="img_entreprises">
+							<div class="padding_well">
+								<h3 id="text_center">Découvrez les entreprises</h3>
+							<p><h5>Consultez les fiches de présentation, les offres et les évènements des entreprises.</h5><p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-8">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 id="text_center">Les dernières publications des entreprises</h3>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-6">
+									<h4 id="text_center">Les dernières offres</h4>
+									<br>
+									<a href="offre.html">
+										<div class="panel panel-default" id="shadow">
+											<div class="row">
+												<div class="col-md-4">
+													<img src="../../theme/logoaxa.jpg" alt="..." class="img-thumbnail">
+												</div>
+												<div class="col-md-8">
+													<div class="bold">Stage en Digital/Web Marketing</div>
+													à Paris
+												</div>
+											</div>
+										</div>
+									</a>
+									<a href="offre.html">
+										<div class="panel panel-default" id="shadow">
+											<div class="row">
+												<div class="col-md-4">
+													<img src="../../theme/logochanel.jpg" alt="..." class="img-thumbnail">
+												</div>
+												<div class="col-md-8">
+													<div class="bold">Stage Business Analyst Eyewear Europe</div>
+													à Paris
+												</div>
+											</div>
+										</div>
+									</a>
+									<a href="offre.html">
+										<div class="panel panel-default" id="shadow">
+											<div class="row">
+												<div class="col-md-4">
+													<img src="../../theme/logoorange.jpg" alt="..." class="img-thumbnail">
+												</div>
+												<div class="col-md-8">
+													<div class="bold">Construction d'un atelier de modélisation spécialisé</div>
+													à Rennes
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-md-6">
+									<h4 id="text_center">Les évènements à venir</h4>
+									<br>
+									<a href="evenement.html">
+										<div class="panel panel-default" id="shadow">
+											<div class="row">
+												<div class="col-md-4">
+													<img src="../../theme/logoedf.jpg" alt="..." class="img-thumbnail">
+												</div>
+												<div class="col-md-8">
+													<div class="bold">Remise des prix EDF Pulse</div>
+													le 15/04/2014
+												</div>
+											</div>
+										</div>
+									</a>
+									<a href="evenement.html">
+										<div class="panel panel-default" id="shadow">
+											<div class="row">
+												<div class="col-md-4">
+													<img src="../../theme/logobnp.png" alt="..." class="img-thumbnail">
+												</div>
+												<div class="col-md-8">
+													<div class="bold">Mobile Film Festival</div>
+													le 16/01/2014
+												</div>
+											</div>
+										</div>
+									</a>
+									<a href="evenement.html">
+										<div class="panel panel-default" id="shadow">
+											<div class="row">
+												<div class="col-md-4">
+													<img src="../../theme/logoamadeus.png" alt="..." class="img-thumbnail">
+												</div>
+												<div class="col-md-8">
+													<div class="bold">Amadeus fait évoluer la vente du rail</div>
+													le 10/12/2013
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="panel-footer" id="text_center">
+								<div class="dernieres_publications">
+									<div class="row">
+										<div class="col-md-6">
+											<a href="offres.html">
+											<span class="glyphicon glyphicon-play"></span>
+											Voir toutes les offres</a>
+										</div>
+										<div class="col-md-6">
+											<a href="evenements.html">
+											<span class="glyphicon glyphicon-play"></span>
+											Voir tous les évènements</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+				</div>
+				<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 id="text_center">Suggestion d'entreprises</h3>
+							</div>
+							<div class="panel-body" id="padding_smaller">
+								<a href="entreprise.html">
+									<div class="panel panel-default" id="shadow">
+										<div class="row">
+											<div class="col-md-4">
+												<img src="../../theme/logogoogle.jpg" alt="..." class="img-thumbnail">
+											</div>
+											<div class="col-md-8">
+												<h4>Google</h4>
+												Informatique/IT
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="entreprise.html">
+									<div class="panel panel-default" id="shadow">
+										<div class="row">
+											<div class="col-md-4">
+												<img src="../../theme/logojanestreet.png" alt="..." class="img-thumbnail">
+											</div>
+											<div class="col-md-8">
+												<h4>Jane Street</h4>
+												Finance
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="entreprise.html">
+									<div class="panel panel-default" id="shadow">
+										<div class="row">
+											<div class="col-md-4">
+												<img src="../../theme/logoibm.jpg" alt="..." class="img-thumbnail">
+											</div>
+											<div class="col-md-8">
+												<h4>IBM</h4>
+												Informatique/IT
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="entreprise.html">
+									<div class="panel panel-default" id="shadow" style="margin-bottom: 0px;">
+										<div class="row">
+											<div class="col-md-4">
+												<img src="../../theme/logoorange.jpg" alt="..." class="img-thumbnail">
+											</div>
+											<div class="col-md-8">
+												<h4>Orange</h4>
+												Télécommunications
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="panel-footer" id="text_center">
+								<a href="entreprises.html">
+								<span class="glyphicon glyphicon-play"></span>
+								Voir toutes les entreprises</a>
+							</div>
+						</div>
+				</div>
+			</div>
+		
+		</div>
+			
+			<nav class="nav navbar-default">
+				
+					<ul  class="nav nav-justified">
+						<li><a href="accueil_etudiant.html">Relate</a></li>
+						<li><a href=#>Copyright 2014</a></li>
+						<li><a href=#>Conditions d'utilisation</a></li>
+						<li><a href=#>Mentions légales</a></li>
+						<li><a href=#>Contactez-nous</a></li>
+						<li><a href=#top_page>Haut de page</a></li>
+					</ul>
+					
+			</nav>
+	</div>
+	</body>
+
+</html>

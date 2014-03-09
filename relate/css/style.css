@@ -1,0 +1,273 @@
+body{
+	background:url(../theme/fond.jpg) top center;
+	margin:0;
+	padding:0;
+	font-family:Myriad Pro Semibold, Trebuchet MS, sans-serif;
+	font-size:20px;
+	color:#1c2d65;
+	}
+	
+html, body, #grosconteneur { height: 100%;}
+body > #grosconteneur { height: auto; min-height: 100%;}
+
+#conteneur { padding-bottom: 20px; }
+	
+#header{
+	margin:0px auto;
+	padding:0;
+}
+	
+#top{
+	height:95px;
+	min-width:1024px;
+	background:url(../theme/pixelbleumarine.jpg) repeat;
+	}
+
+#topombre{
+	height:15px;
+	min-width:1024px;
+	background:url(../theme/topombre.png) repeat-x top;
+	}
+
+	#textetop{
+	float:right;
+	color:white;
+	height:70;
+	position:relative;
+	top:-188px;
+	right:110px;
+	padding:0;
+	}
+	
+	#bienvenue{
+	font-size:18px; 
+	text-align:right;
+	}
+	
+	#bienvenue a{
+	text-decoration:none;
+	color:white;
+	}
+
+	#deconnexion{
+	margin:20px 0px 0px 0px;
+	font-size:16px; 
+	text-align:right;
+	}
+	
+	#deconnexion a{
+	color:white;
+	text-decoration:none;
+	}
+	
+#item{
+	width:850px;
+	margin:0px auto;
+	}
+	
+	#logo{
+	height:90px;
+	background:url(../theme/logorelate.png) no-repeat left bottom;
+	}	
+
+#footer.accueil{
+	clear:both;
+	margin:auto;
+	padding:0;
+	position: relative;
+}
+
+#footer.accueil_etudiant{
+	clear:both;
+	margin:auto;
+	padding-top:20px;
+	position:relative;
+}
+
+#footer.profil{
+	clear:both;
+	margin:auto;
+	padding-top:90px;
+	position:relative;
+}
+
+#footer.edition_profil{
+	clear:both;
+	margin:auto;
+	padding-top:40px;
+	position:relative;
+}
+
+#footer.messages{
+	clear:both;
+	margin:auto;
+	padding-top:90px;
+	position:relative;
+}
+
+#footombre{
+	height:10px;
+	padding-bottom:0px;
+	min-width:1280px;
+	background:url(../theme/footombre.png) repeat-x;
+	display:block;
+	}	
+	
+#foot{
+	height:30px;
+	padding-top:0px;
+	min-width:1280px;
+	background:url(../theme/pixelbleumarine.jpg) repeat;
+	}
+	
+#textefoot{
+	width:1024px;
+	margin:auto;
+}
+
+#foot li{
+	list-style:none;
+	}
+		
+#foot li a.relate{
+	float:left;
+	}
+
+#foot li a{
+	float:right;
+	padding-top:5px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:12px;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	color:white;
+	}
+	
+#conteneur{
+	width:1024px;
+	margin:-52px auto;
+	}
+	
+#menu{
+	height:90px;
+	min-width:1024px;
+	background:url(../theme/pixelblanc.jpg)repeat top;
+	border-top:1px solid #a1a2a3;
+	border-bottom:1px solid #a1a2a3;
+	-moz-box-shadow: 0px 0px 7px #bbb; /* les parametres sont : marge gauche, haute, l'etendu et la couleur*/
+	-o-box-shadow: 0px 0px 7px #bbb;
+	-webkit-box-shadow: 0px 0px 7px #bbb;
+	/*
+	background-image:url(../theme/contourmenuhautorange.png),url(../theme/contourmenubasorange.png),url(../theme/pixelblanc.jpg);
+	background-position:top,bottom,top;
+	background-repeat:repeat-x,repeat-x,repeat;
+	*/
+	margin:30px auto;
+	padding:0;
+	}
+	
+	#menu ul{
+	width:1024px;
+	margin:0 auto;
+	min-width:1024px;
+	}
+	
+	#menu ul li{
+	list-style:none;
+	float:left;
+	}
+	
+	#menu ul li a{
+	height:90px;
+	width:68px;
+	font-size:18px;
+	font-weight:semibold;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	background-repeat:no-repeat;
+	line-height:162px;
+	color:#1c2d65;
+	}
+	
+	#menu ul li a.profil{
+	margin:14px 40px 0px 80px;
+	height:49px;
+	width:52px;
+	line-height:119px;
+	background-position:top center;
+	background-image:url(../theme/iconeprofiletudianthover.png);
+	}
+	
+	#menu ul li a.profil:hover{
+	background-position:bottom center;
+	}
+	
+	#menu ul li a.offres{
+	margin:12px 40px 0px 40px;
+	height:50px;
+	width:50px;
+	line-height:121px;
+	background-position:top center;
+	background-image:url(../theme/iconeoffreshover.png);
+	}
+	
+	#menu ul li a.offres:hover{
+	background-position:bottom center;
+	}
+	
+	#menu ul li a.entreprises{
+	width:92px;
+	margin:10px 40px 0px 40px;
+	height:57px;
+	line-height:125px;
+	background-position:top center;
+	background-image:url(../theme/iconeentrepriseshover.png);
+	}
+	
+	#menu ul li a.entreprises:hover{
+	background-position:bottom center;
+	}
+	
+	#menu ul li a.etudiants{
+	margin:10px 40px 0px 40px;
+	height:56px;
+	line-height:125px;
+	background-position:top center;
+	background-image:url(../theme/iconeetudiantshover.png);
+	}
+	
+	#menu ul li a.etudiants:hover{
+	background-position:bottom center;
+	}
+	
+	#menu ul li a.candidatures{
+	width:94px;
+	margin:6px 40px 0px 40px;
+	height:58px;
+	line-height:133px;
+	background-position:top center;
+	background-image:url(../theme/iconecandidatureshover.png);
+	}
+	
+	#menu ul li a.candidatures:hover{
+	background-position:bottom center;
+	}
+	
+	#menu ul li a.messages{
+	margin:15px 40px 0px 40px;
+	height:48px;
+	width:70px;
+	line-height:118px;
+	background-position:top center;
+	background-image:url(../theme/iconemessageshover.png);
+	}
+	
+	#menu ul li a.messages:hover{
+	background-position:bottom center;
+	}
+	
+	

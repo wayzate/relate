@@ -1,0 +1,222 @@
+<xml version="1.0" encoding="UTF-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Statistiques</title>
+		<link rel="STYLESHEET" type="text/CSS" href="../../bootstrap3/css/bootstrap.css" media="screen" />
+		<link rel="STYLESHEET" type="text/CSS" href="../../bootstrap3/css/style_entreprise.css" media="screen" />
+		<style type="text/css">a:link{text-decoration:none}</style>
+		<style type="text/css">ul{list-style-type: none} </style>
+		<script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
+		<script type="text/javascript" src="../../bootstrap3/js/bootstrap.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	</head>
+
+	<body>
+		
+		<div class="container" id="top_page">
+		
+		<div class="container" id="header_entreprise">
+			<div class="page-header" style="non">
+				<div class="row">
+					<div class="col-md-8">
+						<h1><a href="accueil_entreprise.html">Relate</a></h1>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+							<input type="text" class="form-control" placeholder="Rechercher">
+							</div>
+							<!--<button type="submit" class="btn btn-default">Submit</button>-->
+						</form>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<h4><a href="../index.php">Se déconnecter</a></h4>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+			
+			<div class="row">
+				        <div class="col-md-3">
+          <div class="bs-sidebar" role="complementary">
+            <!--<ul class="nav bs-sidenav" style="background-color: #f7f5fa; border-radius: 5px;">-->
+			<ul class="nav nav-pills nav-stacked" style="background-color: #f7f5fa; border-radius: 5px;">
+              
+<li>
+  <a href="accueil_entreprise.html">Accueil</a>
+</li>
+<li>
+  <a href="profil_entreprise.html">Profil</a>
+  <!--<ul class="nav">
+    <li><a href="#glyphicons-glyphs">Available glyphs</a></li>
+    <li><a href="#glyphicons-how-to-use">How to use</a></li>
+    <li><a href="#glyphicons-examples">Examples</a></li>
+  </ul>-->
+</li>
+<li>
+  <a href="offres_entreprise.html">Offres</a>
+</li>
+<li>
+  <a href="evenements_entreprise.html">Evènements</a>
+</li>
+<li>
+  <a href="etudiants_entreprise.html">Etudiants</a>
+</li>
+<li>
+  <a href="candidats.html">Candidats</a>
+</li>
+<li class="active">
+  <a href="#">Statistiques</a>
+</li>
+<li>
+  <a href="messages_recus_entreprise.html">Messages</a>
+</li>
+            </ul>
+          </div>
+        </div>
+			<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3>Vos statistiques</h3>
+					</div>
+				</div>
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#">Profil</a></li>
+					<li><a href="#">Offres</a></li>
+					<li><a href="#">Evènements</a></li>
+					<li><a href="#">Candidatures</a></li>
+				</ul>
+				
+				<br>
+					
+								<div class="well">
+										Votre fiche entreprise a déjà été consultée par <b>1121</b> étudiants.
+								</div>
+								<div class="panel panel-default" id ="areachart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+								<br>
+								<div class="panel panel-default" id ="piechart1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+								<br>
+								<div class="panel panel-default" id ="piechart2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+								<br>
+								<div class="panel panel-default" id ="piechart3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+								<br>
+			</div>	
+				
+			</div>
+
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Mois', 'Consultations'],
+          ['Sept 2013',  32],
+          ['Oct 2013',  65],
+          ['Nov 2013',  340],
+          ['Dec 2013',  231],
+		  ['Jan 2014',  453]
+		  
+        ]);
+
+        var options = {
+          title: 'Nombre de consultations de votre fiche entreprise, par mois',
+          hAxis: {titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('areachart'));
+        chart.draw(data, options);
+      }
+</script>
+			
+ <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+	  function drawChart() {
+        var data1 = google.visualization.arrayToDataTable([
+          ['Type', 'Nombre de consultations'],
+          ["Ecole d'ingénieur",     673],
+          ["Ecole de commerce",      448],
+        ]);
+
+        var options1 = {
+          title: "Nombre de consultations de votre fiche entreprise, par type d'école"
+        };
+
+        var chart1 = new google.visualization.PieChart(document.getElementById('piechart1'));
+        chart1.draw(data1, options1);
+      }
+ </script>
+
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+	  function drawChart() {
+        var data2 = google.visualization.arrayToDataTable([
+          ['Ecole', 'Nombre de consultations'],
+          ["Ecole Polytechnique",     57],
+          ["Ecole Normale Supérieure Ulm",      23],
+		  ["Ecole Normale Supérieure Cachan",     66],
+          ["Ecole Centrale Paris",      118],
+		  ["Supélec",     194],
+          ["Ecole Centrale Lyon",      79],
+          ["Ecole des Mines de Paris",     14],
+          ["Ecole des Ponts et Chaussées",      38],
+		  ["Télécom ParisTech",     84],
+        ]);
+
+        var options2 = {
+          title: "Nombre de consultations de votre fiche entreprise, par école d'ingénieur"
+        };
+
+        var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+        chart2.draw(data2, options2);
+      }
+</script>
+
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+	  function drawChart() {
+        var data3 = google.visualization.arrayToDataTable([
+          ['Ecole', 'Nombre de consultations'],
+          ["HEC",     96],
+          ["ESSEC",      86],
+		  ["ESCP Europe",     66],
+          ["EM Lyon Business School",      105],
+		  ["EDHEC",     81],
+          ["Grenoble Ecole de Management",      66],
+        ]);
+
+        var options3 = {
+          title: "Nombre de consultations de votre fiche entreprise, par école de commerce"
+        };
+
+        var chart3 = new google.visualization.PieChart(document.getElementById('piechart3'));
+        chart3.draw(data3, options3);
+      }
+ </script>
+			
+			<nav class="nav navbar-default">
+					<ul  class="nav nav-justified">
+						<li><a href="accueil_entreprise.html">Relate</a></li>
+						<li><a href=#>Copyright 2014</a></li>
+						<li><a href=#>Conditions d'utilisation</a></li>
+						<li><a href=#>Mentions légales</a></li>
+						<li><a href=#>Contactez-nous</a></li>
+						<li><a href=#top_page>Haut de page</a></li>
+					</ul>
+			</nav>
+		</div>
+	
+	</body>
+
+</html>

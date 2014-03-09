@@ -1,0 +1,322 @@
+
+  <xml version="1.0" encoding="UTF-8">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+  
+      <head>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Relate</title>
+          <link rel="STYLESHEET" type="text/CSS" href="../bootstrap3/css/bootstrap.css" media="screen" />
+          <link rel="STYLESHEET" type="text/CSS" href="../bootstrap3/css/style-home.css" media="screen" />
+		  <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
+		  <script type="text/javascript" src="../bootstrap3/js/bootstrap.js"></script>
+          <style type="text/css">a:link{text-decoration:none}</style>
+      </head>
+  
+      <body>
+          
+       <div class="container" id="top_page">
+		
+		<div class="container">
+             <div class="page-header">
+				<div class="row">
+                  <div class="col-md-8">
+                       <h1><a href="index.php">Relate</a></h1>
+                  </div>
+                  <div class="col-md-2">
+                      <a type="button" class="btn" href="#inscription_modal" data-toggle="modal"><h4 id="style_a">S'inscrire</h4></a>
+                      <div class="modal fade" id="inscription_modal">
+                          <div class="modal-dialog" style="width:50%;">
+                              <a class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+                              <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                      <h3>Inscription</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                      <form class="form-horizontal" role="form">
+                                          <div class="form-group">
+                                              <label for="input" class="col-sm-4 control-label">Vous êtes</label>
+                                              <div class="col-sm-4">
+                                                  <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox"> Etudiant
+                                                      </label>
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-4">
+                                                  <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox"> Entreprise
+                                                      </label>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                              <div class="form-group">
+                                                  <label for="input" class="col-sm-4 control-label">Votre prénom</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="text" class="form-control" placeholder="Prénom">
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="input" class="col-sm-4 control-label">Votre nom</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="text" class="form-control" placeholder="Nom">
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="input" class="col-sm-4 control-label">Votre adresse mail</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Adresse mail">
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="input" class="col-sm-4 control-label">Votre nom d'utilisateur</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="text" class="form-control" placeholder="Nom d'utilisateur">
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="input" class="col-sm-4 control-label">Votre mot de passe</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+                                                  </div>
+                                              </div>
+                                          
+                                      </form>
+                                  </div>
+                                  <div class="panel-footer">
+                                      <a href="index.php" class="btn" data-dismiss="modal">Annuler</a>
+                                      <a href="inscription.html" class="btn btn-primary">S'inscrire</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2">
+                      <a  type="button" class="btn" href="#connexion_modal" data-toggle="modal"><h4 id="style_a">Se connecter</h4></a>
+                      <div class="modal fade" id="connexion_modal">
+                          <div class="modal-dialog" style="width:50%;">
+                              <a class="close" data-dismiss="modal">&times;</a>
+                              <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                      <h3>Connexion</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                      <form class="form-horizontal" role="form">
+                                          <div class="form-group">
+                                              <label for="input" class="col-sm-4 control-label">Vous êtes</label>
+                                              <div class="col-sm-4">
+                                                  <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox"id="check_etudiant"> Etudiant
+                                                      </label>
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-4">
+                                                  <div class="checkbox">
+                                                      <label>
+                                                        <input type="checkbox" id="check_entreprise"> Entreprise
+                                                      </label>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                              <div class="form-group">
+                                                  <label for="input" class="col-sm-4 control-label">Votre nom d'utilisateur</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="text" class="form-control" placeholder="Nom d'utilisateur">
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="input" class="col-sm-4 control-label">Votre mot de passe</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="password" class="form-control" placeholder="Mot de passe">
+                                                  </div>
+                                              </div>
+											  <div class="alert alert-warning" id="check_alert">Veuillez remplir tous les champs</div>
+                                      </form>
+                                  </div>
+                                  <div class="panel-footer">
+                                      <a href="index.php" class="btn" data-dismiss="modal">Annuler</a>
+                                      <a class="btn btn-primary" id="link">Se connecter</a>
+								  </div>
+<script>
+var chk_etudiant = document.getElementById("check_etudiant");
+var chk_entreprise = document.getElementById("check_entreprise");
+var link = document.getElementById("link");
+var alerte = document.getElementById("check_alert");
+alerte.style.display = "none";
+var scrt_var = "#";
+
+chk_etudiant.onclick = function(){
+	chk_etudiant.checked = true;
+	chk_entreprise.checked = false;
+}
+
+chk_entreprise.onclick = function(){
+	chk_entreprise.checked = true;
+	chk_etudiant.checked = false;
+}
+
+link.onclick = function(){
+	if((chk_etudiant.checked) && !(chk_entreprise.checked)){  
+	var scrt_var = "etudiant/accueil_etudiant.html";	
+    link.setAttribute("href",scrt_var);
+    }
+	if((chk_entreprise.checked) && !(chk_etudiant.checked)){
+    var scrt_var = "entreprise/accueil_entreprise.html";	
+    link.setAttribute("href",scrt_var);
+    }
+	if(!(chk_entreprise.checked) && !(chk_etudiant.checked)){
+    var scrt_var = "#";	
+    link.setAttribute("href",scrt_var);
+	alerte.style.display = "inline";
+    }
+}
+
+</script>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+				  </div>
+          </div>
+          </div>
+
+			<div class="container">
+                          <div class="jumbotron">
+                              <h1>Relate,</h1>
+                              <h3>pour un contact privilégié entre entreprises et étudiants des meilleures grandes écoles</h3>
+                              <div class="row">
+                                  <div class="col-md-5">
+                                          <div class="panel panel-default">
+                                              <div class="panel-body">
+                                                  <h4 id="interligne">
+                                                  <span class="glyphicon glyphicon-user"></span>
+                                                  Créez votre profil étudiant visible par les entreprises
+                                                  </h4>
+                                              </div>
+                                          </div>
+                                      
+                                          <div class="panel panel-default">
+                                              <div class="panel-body">
+                                                  <h4 id="interligne">
+                                                  <span class="glyphicon glyphicon-search"></span>
+                                                  Consultez les offres de stages correspondant à vos critères
+                                                  </h4>
+                                              </div>
+                                          </div>
+                                      
+                                          <div class="panel panel-default">
+                                              <div class="panel-body">
+                                                  <h4 id="interligne">
+                                                  <span class="glyphicon glyphicon-send"></span>
+                                                  Postulez directement aux offres depuis Relate
+                                                  </h4>
+                                              </div>
+                                          </div>
+                                      <a href="#" class="btn btn-primary btn-lg" role="button">Découvrez Relate</a>
+                                      
+                                  </div>
+                                  <div class="col-md-7">
+										<div class="panel panel-default">
+                                              <div class="panel-body">
+                                                  <img src=../theme/handshake.jpg class="img-responsive" alt="Responsive image" style="height:326px;">
+                                              </div>
+                                          </div>
+									  <a href="#inscription_modal" class="btn btn-success btn-lg" data-toggle="modal">Rejoignez gratuitement Relate</a>
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <div class="col-md-6">
+                              <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                      <h3 id="text_center">Lisez des témoignages sur Relate</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                      <!--<div class="col-md-6">-->
+                                          <div class="panel panel-default"><img src="..." alt="..." class="img-thumbnail">BlaBla 1</div>
+                                          <div class="panel panel-default"><img src="..." alt="..." class="img-thumbnail">BlaBla 2</div>
+                                          <div class="panel panel-default"><img src="..." alt="..." class="img-thumbnail">BlaBla 3</div>
+                                      <!--</div>
+                                      <div class="col-md-6">
+                                          <h4>Quelques entreprises partenaires</h4>
+                                          <a href=#><div class="panel panel-default"><img src="..." alt="..." class="img-thumbnail">Entreprise 1</div></a>
+                                          <a href=#><div class="panel panel-default"><img src="..." alt="..." class="img-thumbnail">Entreprise 2</div></a>
+                                          <a href=#><div class="panel panel-default"><img src="..." alt="..." class="img-thumbnail">Entreprise 3</div></a>
+                                      </div>-->
+                                  </div>
+                                  <div class="panel-footer" id="text_center">
+                                          <a href="#">
+										  <span class="glyphicon glyphicon-play"></span>
+										  Voir tous les témoignages</a>
+                                          <!--<a href="evenements.html">Voir toutes les entreprises</a>-->
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-6">
+                              <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                      <h3 id="text_center">Découvrez les entreprises partenaires</h3>
+                                      
+                                  </div>
+                                  <div class="panel-body" id="text_center">
+                                      <div class="col-md-4">
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+                                          <br>
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+                                          <br>
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+										  <br>
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+                                      </div>
+                                      <div class="col-md-4">
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+                                          <br>
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+                                          <br>
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+										  <br>
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+                                      </div>
+                                      <div class="col-md-4">
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+                                          <br>
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+                                          <br>
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+										  <br>
+                                          <a href=#><img src="..." alt="..." class="img-thumbnail"></a>
+                                      </div>
+                                  </div>
+                                  <div class="panel-footer" id="text_center">
+                                          <a href="entreprises.html">
+										  <span class="glyphicon glyphicon-play"></span>
+										  Voir toutes les entreprises</a>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                  </div>
+              
+              <nav class="nav navbar-default">
+				
+					<ul  class="nav nav-justified">
+						<li><a href="#">Relate</a></li>
+						<li><a href=#>Copyright 2014</a></li>
+						<li><a href=#>Conditions d'utilisation</a></li>
+						<li><a href=#>Mentions légales</a></li>
+						<li><a href=#>Contactez-nous</a></li>
+						<li><a href=#top_page>Haut de page</a></li>
+					</ul>
+					
+			</nav>
+          </div>
+      
+      </body>
+  
+  </html>

@@ -1,0 +1,340 @@
+/*
+Registration/Login Form by html-form-guide.com
+You can customize all the aspects of the form in this style sheet
+*/
+#fg_membersite
+{
+	width:550px;
+	float:left;
+	position:relative;
+	top:80px;
+	left:116px;
+}
+
+#fg_membersite.edition
+{
+	float:left;
+	position:relative;
+	top:80px;
+	left:25%;
+	margin:auto;
+	padding-bottom:60px;
+}
+
+.rectangletitre
+{
+	width:485px;
+	height:50px;
+	position:relative;
+	left:-4px;
+	border:1px solid #567adb; 
+	margin:auto;
+	text-align:left;
+	color:white;
+	font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+	font-size:20px;
+	font-weight:semibold;
+	line-height:50px;
+	padding-left:50px;
+	background:url(../theme/crayon.png) no-repeat;
+	background-position: 2% 42%;
+	background-color:#567adb;
+}
+
+
+#fg_membersite fieldset
+{
+   width:90%;
+   padding:20px;
+   border:1px solid #567adb;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+border-radius: 10px;
+	background-color:white;   
+}
+
+#fg_membersite.edition fieldset
+{
+   border-radius:0px;   
+}
+
+#fg_membersite a.poplight[id="texttop"]
+{	
+	float:right;
+	font-size:20px; 
+	text-align:right;
+	padding:0;
+	position:relative;
+	top:-55px;
+	right:-180px;
+	margin:0px 30px 0px 30px;		
+	color:white;
+	text-decoration:none;
+}
+
+
+#fg_membersite a.poplight[id="ajout"]
+{	
+	position:relative;
+	top:7px;
+	font-size:12px; 
+	font-weight:normal;
+	text-align:center;
+	padding:0;
+	color:white;
+	text-decoration:none;
+	padding-left:4px;
+	padding-right:4px;
+	border:1px solid #567adb;
+-moz-border-radius: 9px;
+-webkit-border-radius: 9px;
+-khtml-border-radius: 9px;
+border-radius: 9px;
+	background-color:#35d30b;   
+	opacity: .7;
+}
+
+#fg_membersite a.poplight[id="ajout"]:hover
+{	
+  opacity:1;
+  text-decoration:none;
+}
+
+#fg_membersite legend, #fg_membersite h2
+{
+   font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size:1.3em;
+   font-weight:semibold;
+   color:#1c2d65;
+}
+
+#fg_membersite .titrerubrique
+{
+   font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size:18px;
+   font-weight:semibold;
+   color:#567adb;
+   background:url(../theme/traittitre.png) no-repeat left bottom;
+   background-size: 970px 1px;
+}
+
+#fg_membersite label
+{
+   font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size:14px;
+   font-weight:semibold;
+   color:#585757;
+}
+
+#fg_membersite input[type="text"],#fg_membersite textarea,
+#fg_membersite input[type="password"]
+{
+  font-family :Myriad Pro Semibold, Trebuchet MS, sans-serif;
+  font-size: 14px;
+  line-height:140%;
+  width:222px;
+  color : #000000; 
+  background-color:white;
+  border:1px solid #a1a2a3;
+}
+
+#fg_membersite input[type="text"][readonly='readonly'],#fg_membersite textarea[readonly='readonly'],
+#fg_membersite input[type="password"]
+{
+  background-color:transparent; 
+  border:none;
+}
+
+
+#fg_membersite input[type="text"],
+#fg_membersite input[type="password"]
+{
+   text-align:left;
+   position:absolute;
+   left:49.65%;
+   padding:0;
+}
+
+#fg_membersite.edition input[type="text"],
+#fg_membersite.edition input[type="password"]
+{
+   text-align:left;
+   position:absolute;
+   left:50%;
+   padding-left:2px;
+}
+
+ #fg_membersite #scaptcha
+{
+  width:60px;
+  height:18px;
+}
+
+#fg_membersite input[type="submit"].boutonvalider
+{
+   width:100px;
+   height:35px;
+   padding-left:0px;
+   background-color:transparent;
+   background:url(../theme/boutonvalider.png) no-repeat top center;
+   background-size:100px 72px;
+   border:none;
+   cursor: pointer;
+   font-family : Arial, sans-serif;
+   font-size:16px;
+   font-weight:semibold;
+   color: #1c2d65;
+   padding:0px 0px 3px 20px;
+}
+
+#fg_membersite input[type="submit"].boutonvalider:hover
+{
+	background-position: bottom center;
+	background-size:100px 70px;
+	color:white;
+}
+
+#boutonannuler a
+{
+   float:right;
+   width:100px;
+   height:28px;
+   margin-top:-36px;
+   background-color:transparent;
+   background:url(../theme/boutonannuler.png) no-repeat top center;
+   background-size:100px 72px;
+   border:none;
+   cursor: pointer;
+   font-family : Arial, sans-serif;
+   font-size:16px;
+   font-weight:semibold;
+   color: #1c2d65;
+   text-align:center;
+   padding-top:7px;
+   padding-left:16px;
+}
+
+#boutonannuler a:hover
+{
+	background-position: bottom center;
+	background-size:100px 70px;
+	color:white;
+
+}
+
+
+#fg_membersite input[type="checkbox"]
+{
+   font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size:14px;
+   font-weight:semibold;
+   color:#585757;
+}
+
+#fg_membersite .container
+{
+   margin-top:8px;
+   margin-bottom: 10px;
+}
+
+#fg_membersite.edition .container a:hover
+{
+   text-decoration:underline;
+}
+
+#fg_membersite .container a[id="marge"]
+{
+   text-align:left;
+   position:absolute;
+   left:49.65%;
+   padding : 0;
+}
+
+#fg_membersite .type
+{
+   font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size:0.8em;
+   font-weight: semibold;
+   color:#1c2d65;
+}
+
+#fg_membersite .error
+{
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 0.7em;
+   color:#fd0000;
+   background-color :#fdfa00;
+}
+
+#fg_membersite #register_password_errorloc
+{
+    clear:both;
+}
+
+#fg_membersite  fieldset#antispam
+{
+   padding:2px;
+   border-top:1px solid #EEE;
+   border-left:0;
+   border-right:0;
+   border-bottom:0;
+   width:350px;
+}
+
+#fg_membersite fieldset#antispam legend
+{
+   font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size: 0.8em;
+   font-weight:bold;
+   color:#333;   
+}
+
+#fg_membersite .short_explanation
+{
+   font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size: 0.6em;
+   color:#0a40ef;   
+}
+
+/* spam_trap: This input is hidden. This is here to trick the spam bots*/
+#fg_membersite .spmhidip
+{
+   display:none;
+   width:10px;
+   height:3px;
+}
+#fg_membersite #fg_crdiv
+{
+   font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size: 0.3em;
+   opacity: .2;
+   -moz-opacity: .2;
+   filter: alpha(opacity=20);   
+}
+#fg_membersite  #fg_crdiv p
+{
+    display:none;
+}
+
+#fg_membersite_content li
+{
+font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+#fg_membersite_content
+{
+    font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+    font-size: 0.9em;
+    line-height: 150%
+}
+
+#fg_membersite_content h2
+{
+   font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size: 1.5em;
+   font-weight:bold;
+   color:#333;
+}

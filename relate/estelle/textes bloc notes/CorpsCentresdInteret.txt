@@ -1,0 +1,4 @@
+Sports		Sport 
+Arts		Art 
+Voyages 	Destination
+Associatif	Association

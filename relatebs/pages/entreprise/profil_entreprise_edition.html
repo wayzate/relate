@@ -1,0 +1,316 @@
+<xml version="1.0" encoding="UTF-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Edition de profil</title>
+		<link rel="STYLESHEET" type="text/CSS" href="../../bootstrap3/css/bootstrap.css" media="screen" />
+		<link rel="STYLESHEET" type="text/CSS" href="../../bootstrap3/css/style_entreprise.css" media="screen" />
+		<style type="text/css">a:link{text-decoration:none}</style>
+		<style type="text/css">ul{list-style-type: none} </style>
+		<script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
+		<script type="text/javascript" src="../../bootstrap3/js/bootstrap.js"></script>
+		
+	</head>
+
+	<body>
+	
+<div class="container" id="top_page">
+		
+		<div class="container" id="header_entreprise">
+			<div class="page-header" style="non">
+				<div class="row">
+					<div class="col-md-8">
+						<h1><a href="accueil_entreprise.html">Relate</a></h1>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+							<input type="text" class="form-control" placeholder="Rechercher">
+							</div>
+							<!--<button type="submit" class="btn btn-default">Submit</button>-->
+						</form>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<h4><a href="../index.php">Se déconnecter</a></h4>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+			
+			<div class="row">
+				        <div class="col-md-3">
+          <div class="bs-sidebar" role="complementary">
+            <!--<ul class="nav bs-sidenav" style="background-color: #f7f5fa; border-radius: 5px;">-->
+			<ul class="nav nav-pills nav-stacked" style="background-color: #f7f5fa; border-radius: 5px;">
+              
+<li>
+  <a href="accueil_entreprise.html">Accueil</a>
+</li>
+<li class="active">
+  <a href="profil_entreprise.html">Profil</a>
+  <!--<ul class="nav">
+    <li><a href="#glyphicons-glyphs">Available glyphs</a></li>
+    <li><a href="#glyphicons-how-to-use">How to use</a></li>
+    <li><a href="#glyphicons-examples">Examples</a></li>
+  </ul>-->
+</li>
+<li>
+  <a href="offres_entreprise.html">Offres</a>
+</li>
+<li>
+  <a href="evenements_entreprise.html">Evènements</a>
+</li>
+<li>
+  <a href="etudiants_entreprise.html">Etudiants</a>
+</li>
+<li>
+  <a href="candidats.html">Candidats</a>
+</li>
+<li>
+  <a href="stats.html">Statistiques</a>
+</li>
+<li>
+  <a href="messages_recus_entreprise.html">Messages</a>
+</li>
+            </ul>
+          </div>
+        </div>
+				
+				<div class="col-md-8">
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<ul class="list-inline">
+									<li><span class="glyphicon glyphicon-pencil"></li>
+									<li><h3>Edition de votre fiche entreprise</h3></li>
+								</ul>
+							</div>
+							<div class="panel-body">
+							<div class="list-group">
+								<h4 class="list-group-item-heading">Informations générales de l'entreprise</h4>
+								<br>
+									<form class="form-horizontal" role="form">
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Raison sociale</label>
+										<div class="col-sm-8">
+										  <input type="text" class="form-control" placeholder="Raison sociale">
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Secteur d'activité</label>
+										<div class="col-sm-8">
+										<div class="dropdown">
+											<!--<a class="dropdown-toggle btn" data-toggle="dropdown" href="#">-->
+											<a class="form-control" data-toggle="dropdown" href="#">
+											Tous
+												<b class="caret"></b>
+											</a>
+											<ul class="dropdown-menu dropdown-menu-form" role="menu">
+												<li>
+													<div class="checkbox">
+												<label>
+													<input type="checkbox">
+													Audit/Conseil
+												</label>
+												</div>
+												</li>
+												<li>
+													<div class="checkbox">
+												<label>
+													<input type="checkbox">
+													Banque/Finance/Assurance
+												</label>
+												</div>
+												</li>
+												<li>
+													<div class="checkbox">
+												<label>
+													<input type="checkbox">
+													BTM/Immobilier 
+												</label>
+												</div>
+												</li>
+												<li>
+													<div class="checkbox">
+												<label>
+													<input type="checkbox">
+													Distribution/Consommation 
+												</label>
+												</div>
+												</li>
+												<li>
+													<div class="checkbox">
+												<label>
+													<input type="checkbox">
+													Energie/Environnement 
+												</label>
+												</div>
+												</li>
+												<li>
+													<div class="checkbox">
+												<label>
+													<input type="checkbox">
+													Industrie/Chimie 
+												</label>
+												</div>
+												</li>
+												<li>
+													<div class="checkbox">
+												<label>
+													<input type="checkbox">
+													Pharmacie/Santé 
+												</label>
+												</div>
+												</li>
+												<li>
+													<div class="checkbox">
+												<label>
+													<input type="checkbox">
+													Pharmacie/Santé
+												</label>
+												</div>
+												</li>
+												<li>
+													<div class="checkbox">
+												<label>
+													<input type="checkbox">
+													Transport/Electronique
+												</label>
+												</div>
+												</li>
+											</ul>
+										</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Effectif</label>
+										<div class="col-sm-8">
+										  <input type="text" class="form-control" placeholder="Effectif">
+										</div>
+									  </div>
+									 
+									   <!--<div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Année du cursus</label>
+										<div class="col-sm-8">
+											<select class="form-control">
+												<option>1ère année</option>
+												<option>2ème année</option>
+												<option>Césure</option>
+												<option>Dernière année</option>
+											</select>
+										</div>
+									  </div>-->
+									  <!--<div class="form-group">
+										<label for="input" class="col-sm-3 control-label">CV</label>
+										<div class="col-sm-8">
+											<input type="file">
+										</div>
+									   </div>-->
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Adresse postale</label>
+										<div class="col-sm-8">
+										  <input type="text" class="form-control" placeholder="Adresse postale">
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Téléphone</label>
+										<div class="col-sm-8">
+										  <input type="text" class="form-control" placeholder="Téléphone">
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Adresse mail</label>
+										<div class="col-sm-8">
+										  <input type="text" class="form-control" placeholder="Adresse mail">
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Site web</label>
+										<div class="col-sm-8">
+										  <input type="text" class="form-control" placeholder="Site web">
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Logo</label>
+										<div class="col-sm-8">
+											<input type="file">
+										</div>
+									   </div>
+									</form>
+								
+								<br>
+								<h4 class="list-group-item-heading">Description de l'entreprise</h4>
+								<br>
+									<form class="form-horizontal" role="form">
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Présentation</label>
+										<div class="col-sm-8">
+										  <textarea class="form-control" rows="5"></textarea>
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Activité</label>
+										<div class="col-sm-8">
+										  <textarea class="form-control" rows="5"></textarea>
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Organisation</label>
+										<div class="col-sm-8">
+										  <textarea class="form-control" rows="5"></textarea>
+										</div>
+									  </div>
+									  <div class="form-group">
+										<label for="input" class="col-sm-3 control-label">Vision</label>
+										<div class="col-sm-8">
+										  <textarea class="form-control" rows="5"></textarea>
+										</div>
+									  </div>
+								<br>
+								<div class="form-group">
+									<div class="col-sm-10">
+										<div class="checkbox">
+											<label>
+											  <input type="checkbox"> J'autorise la diffusion des informations issues de ma fiche
+											</label>
+										</div>
+									</div>
+								</div>
+								</form>
+							</div>
+							</div>
+							<div class="panel-footer">
+								<a href="profil_entreprise.html">
+										<div class="btn-group-lg">
+											<button type="submit" class="btn btn-primary">Valider</button>
+										</div>
+								</a>
+							</div>
+							
+						</div>
+				</div>
+				
+			</div>
+			
+			<nav class="nav navbar-default">
+					<ul  class="nav nav-justified">
+						<li><a href="accueil_entreprise.html">Relate</a></li>
+						<li><a href=#>Copyright 2014</a></li>
+						<li><a href=#>Conditions d'utilisation</a></li>
+						<li><a href=#>Mentions légales</a></li>
+						<li><a href=#>Contactez-nous</a></li>
+						<li><a href=#top_page>Haut de page</a></li>
+					</ul>
+			</nav>
+		</div>
+	
+	</body>
+
+</html>

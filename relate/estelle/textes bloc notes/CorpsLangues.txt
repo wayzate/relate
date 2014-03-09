@@ -1,0 +1,3 @@
+Langue 1	Niveau
+Langue 2	Niveau
+Langue 3	Niveau

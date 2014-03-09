@@ -1,0 +1,517 @@
+
+
+<xml version="1.0" encoding="UTF-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Profil</title>
+<link href="css/styleprofil_etudiant.css" rel="stylesheet" type="text/CSS" media="screen" />
+    <link rel="STYLESHEET" type="text/css" href="style/profil_fg_membersite.css" />
+    <script type='text/javascript' src='../scripts/gen_validatorv31.js'></script>
+    <link rel="STYLESHEET" type="text/css" href="style/pwdwidget.css" />
+    <link rel="STYLESHEET" type="text/css" href="popup/changeprofiletest.css" />
+    <script src="scripts/pwdwidget.js" type="text/javascript"></script>
+    <script type="text/javascript" src="autocomplete/jquery-1.2.1.pack.js"></script>
+  
+   <script type="text/javascript" src="popup/jquery-1.8.3.js"></script>
+   
+<script type="text/javascript">
+	function lookup_society(inputString) {
+		if(inputString.length == 0) {
+			// Hide the suggestion box.
+			$('#suggestionsSociety').hide();
+		} else {
+			$.post("../autocomplete/rpc_entreprise.php", {queryString: ""+inputString+""}, function(data){
+				if(data.length >0) {
+					$('#suggestionsSociety').show();
+					$('#autoSuggestionsListSociety').html(data);
+				}
+			});
+		}
+	} // lookup_society
+
+	function lookup_town(inputString) {
+		if(inputString.length == 0) {
+			// Hide the suggestion box.
+			$('#suggestionsTown').hide();
+		} else {
+			$.post("../autocomplete/rpc_villes.php", {queryString: ""+inputString+""}, function(data){
+				if(data.length >0) {
+					$('#suggestionsTown').show();
+					$('#autoSuggestionsListTown').html(data);
+				}
+			});
+		}
+	} // lookup_town
+	
+	function fill(thisValue) {
+		$('#inputString').val(thisValue);
+		setTimeout("$('#suggestionsTown').hide();", 200);
+		setTimeout("$('#suggestionsSociety').hide();", 200);
+		
+	}
+</script>
+
+   
+    
+    
+<style type="text/css">
+A:link {text-decoration: none; color: #000}
+A:visited {text-decoration: none; color: #000}
+A:active {text-decoration: none; color: #000}
+A:hover {text-decoration:none; color: #000; color: #000}
+</style>
+   
+
+<style type="text/css">
+	body {
+		font-family: Myriad Pro Semibold, Trebuchet MS, sans-serif;
+		font-size: 14px;
+		color: #000;
+		padding: 0px;	
+	}
+	
+	h3 {
+		margin: 0px;
+		padding: 0px;	
+	}
+
+	.suggestionsBox {
+		position: relative;
+		left: 30px;
+		margin: 10px 0px 0px 0px;
+		width: 200px;
+		background-color:transparent;
+		border:none;	
+		color:transparent;
+	}
+	
+	.suggestionList {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.suggestionList li {
+		
+		margin: 0px 0px 3px 0px;
+		padding: 3px;
+		cursor: pointer;
+	}
+	
+	.suggestionList li:hover {
+		background-color: #659CD8;
+	}
+</style>
+
+</head>
+
+
+<body>
+	<div id="header">
+		<div id="top">
+			<div id="item">
+				<div id="logo"></div>
+				</div>
+			</div>
+		<div id="topombre"></div>
+		
+		
+	</div>
+	
+	<div id="menu">
+	
+		<ul>
+			<li><a href="http://www.google.fr" class="profil"> Profil </a></li>
+			<li><a href="#" class="offres"> Offres </a></li>
+			<li><a href="#" class="entreprises"> Entreprises </a></li>
+			<li><a href="#" class="etudiants"> Etudiants </a></li>
+			<li><a href="#" class="candidatures"> Candidatures </a></li>
+			<li><a href='messenger/mailbox.php' class="messages"> Messages </a></li>
+		</ul>
+	</div>
+		
+	<div id="conteneur">
+    	<div id="textetop">
+			<div id="bienvenue">Bienvenue Matthieu</div>
+        	<div id="deconnexion"><a href='logout.php'> Se déconnecter </a></div>
+        </div>
+        
+		<div id="titre">VOTRE PROFIL ETUDIANT</div>
+
+
+<!-- *********************** AFFICHAGE DU PROFIL *********************** -->
+        
+<div id='fg_membersite'>
+<form id='changeprofile' action='/Relate_BDE/SiteBDE-DW/source/profil_etudiant.php' method='post' accept-charset='UTF-8'>
+
+<fieldset >
+
+<input type='hidden' name='submitted' value='1'/>
+<input type='text'  class='spmhidip' name='spe8306af0d23b01a2bf7c1734aacf25fe' />
+
+<div>
+	<span class='error'>
+		   	</span>
+</div>
+
+<div class='titrerubrique'> Vos informations générales</div>
+
+<div class='container'>
+    <label>Civilité</label>
+    	<a id="marge">
+		 Monsieur    	         </a>
+    
+    <span id='changeprofile_gender_errorloc' class='error'></span>
+</div>
+
+<div class='container'>
+    <label>Nom</label>
+    
+    <input readonly='readonly' type='text' name='0.0.user.surname' value='Marie-Louise' maxlength="50" />
+    
+    <span id='changeprofile_surname_errorloc' class='error'></span>
+</div>
+
+<div class='container'>
+    <label>Prénom</label>
+    
+    <input readonly='readonly' type='text' name='0.0.user.name' value='Matthieu' maxlength="50" />
+    
+    <span id='changeprofile_name_errorloc' class='error'></span>
+</div>
+
+<div class='container'>
+    <label>Date de naissance</label>
+	
+    <a id="marge">
+	04/08/90    </a>
+	
+    <span id='changeprofile_birthdate_errorloc' class='error'></span>
+</div>
+
+<div class='container'>
+    <label for='nationality' >Nationalité</label>
+    
+    <input readonly='readonly' type='text' name='0.0.student.nationality' id='student.nationality' value='FR' maxlength="50" />
+    
+    <span id='changeprofile_nationality_errorloc' class='error'></span>
+</div>
+
+<div class='container'>
+    <label for='studentYear' >Année du cursus</label>
+    <a id="marge">
+        	    	    	Deuxième année                        	</a>
+    
+    <span id='changeprofile_studentYear_errorloc' class='error'></span>
+</div>
+
+<br/>
+<div class='titrerubrique'> Vos coordonnées</div>
+
+<div class='container'>
+    <label>Ville</label>
+    
+    <input readonly='readonly' type='text' class='villes' name='0.0.user.town' value='Rennes' maxlength="20" />
+    
+    <span id='changeprofile_town_errorloc' class='error'></span>
+</div>
+
+<div class='container'>
+    <label for='phonenumber' >Téléphone</label>
+    
+    <input readonly='readonly' type='text' name='0.0.user.phonenumber' id='user.phonenumber' value='0643326915' maxlength="10" />
+    
+    <span id='changeprofile_phonenumber_errorloc' class='error'></span>
+</div>
+
+<br/>
+<div class='titrerubrique'>Ce que vous recherchez</div>
+
+<div class='container'>
+    <label>Type de contrat</label>
+    <a id="marge">
+        	    	                                Freelance            </a>
+    <span id='changeprofile_seeking_errorloc' class='error'></span>
+</div>
+
+<div class='container'>
+	    <label>Disponibilité</label>
+     <a id="marge">   
+	 																Juillet										
+		2013        </a>
+    <span id='changeprofile_disponibility_errorloc' class='error'></span>
+</div>
+
+<div class='container'>
+    <label>Durée</label>
+    	 <a id="marge">
+    	     	     	     	          6 à 9 mois                      	 </a>
+    <span id='changeprofile_seekingDuration_errorloc' class='error'></span>
+</div>
+
+<div class='container'>
+    <label>Secteur d'activité</label>
+    <a id="marge">
+                                  Energie/Environnement                            </a>
+    <span id='changeprofile_seekingDomain_errorloc' class='error'></span>
+</div>
+
+<br/>
+<div class='titrerubrique'> Vos formations</div>
+
+<div class='container'>	
+        <label>2011-2014</label><a id='marge'>Supélec</a>
+</div>
+<div class='container'>	
+	<label>2012-2016</label><a id='marge'>Arts et Métiers</a>    <span id='changeprofile_formations_errorloc' class='error'></span>
+</div>
+
+<br/>
+<div class='titrerubrique'> Vos expériences professionnelles</div>
+
+<div class='container'>
+	<label>07/2012-00/0000</label><a id='marge'>EDF</a>		
+</div>
+
+<br/>
+
+<div class='titrerubrique'> Vos compétences informatiques</div>
+
+<div class='container'>
+    <label for='info' >Languages de programmation</label>
+    <a id="marge">
+    C++    </a>
+	
+</div>
+<div class='container'>
+    <label for='info' >Logiciels</label>
+    <a id="marge">
+    Microsoft Office    </a>
+	
+</div>
+
+<br/>
+<div class='titrerubrique'> Vos langues</div>
+
+<div class='container'>
+    
+    
+    Japonais : Intermédiaire<br />
+  
+  <!-- 
+    $chaine = "";$retourch = "";
+        $j=3;
+     
+    $l=0;
+    while(isset($user_rec[$l][$j]['tongue']['name'])){
+    	$l++;
+    }
+    for($i=0; $i < $l; $i++)
+		{
+			$chaine = $chaine.$retourch;
+			$chaine = $chaine."<label>";
+			$tongueName = isset($user_rec[$i][$j]['tongue']['name']) ? $user_rec[$i][$j]['tongue']['name'] : "";
+			
+			$chaine = $chaine.$tongueName . "</label>"; 
+			$chaine = $chaine."<a id='marge'>";
+			$lvl = isset($user_rec[$i][$j]['Parle']['estimatedLevel']) ? $user_rec[$i][$j]['Parle']['estimatedLevel'] : "";
+			$tongueLevel = "";
+			
+			if($lvl == "0") { $tongueLevel = "Notions"; };
+			if($lvl == "1") { $tongueLevel = "Intermédiaire"; };
+			if($lvl == "2") { $tongueLevel = "Courant"; };
+			if($lvl == "3") { $tongueLevel = "Bilingue"; };
+			if($lvl == "4") { $tongueLevel = "Langue maternelle"; };
+			
+			$chaine = $chaine.$tongueLevel . "</a>";
+			$retourch = "<br/>\n";
+		}
+		
+		echo $chaine;
+		unset($chaine);
+		unset($retourch);
+   -->  
+	
+</div>
+
+<br/>
+<div class='titrerubrique'> Vos sports</div>
+
+<div class='container'>
+   
+	
+     Tennis Volley<br />
+    
+</div>
+
+<br/>
+<div class='titrerubrique'> Votre parcours artistique</div>
+
+<div class='container'>
+    
+    
+	Peinture<br />
+                
+                
+</div>
+
+<br/>
+<div class='titrerubrique'> Votre engagement associatif</div>
+
+<div class='container'>
+    
+    
+    Bureau des élèves<br />
+Bureau des élèves<br />
+Bureau des élèves<br />
+    
+</div>
+
+<br/>
+<div class='titrerubrique'> Vos voyages</div>
+
+<div class='container'>
+    
+     Tanzanie<br />
+Tanzanie<br />
+Tanzanie<br />
+
+</div>
+
+<!-- 
+<div class='container'>
+	<label for='picture'>Envoi de votre photographie : (l'image sera redimensionnée sur 140*150px)</label>
+    	</div>
+ -->
+
+</fieldset>
+</form>
+</div>
+        
+<!-- *********************** BLOCS DE DROITE *********************** -->
+        
+    <div id="rangee">
+        <div id="bloc">
+        	<div class='hautbloc1'></div>
+        	<div class='bloc1'>
+				<a href="#"> EDITEZ VOTRE PROFIL
+										<br><div id="petit">
+                                        Modifiez vos informations personnelles constituant votre profil étudiant
+										</div></br>
+                </a>
+        	</div>
+        	<div class='basbloc1'></div>
+        </div>
+            
+        <div id="bloc">
+        	<div class='hautbloc1'></div>
+        	<div class='bloc1'>
+				<a href="#"> GENEREZ LE CV
+										<br><div id="petit">
+                                        Faîtes apparaître un CV automatique à partir des informations de votre profil
+										</div></br>
+                </a>
+        	</div>
+        	<div class='basbloc1'></div>
+        </div>
+
+        <div id="bloc">
+        	<div class='hautbloc1'></div>
+        	<div class='bloc1'>
+				<a href="#"> IMPORTEZ VOTRE CV
+										<br><div id="petit">
+                                        Importez votre CV personnel sur Relate
+										</div></br>
+                </a>
+        	</div>
+        	<div class='basbloc1'></div>
+        </div>
+
+        <div id="bloc">
+        	<div class='hautbloc1'></div>
+        	<div class='bloc1'>
+				<a href="#"> VOTRE COMPTE
+										<br><div id="petit">
+                                        Changez votre mot de passe
+										</div></br>
+                </a>
+        	</div>
+        	<div class='basbloc1'></div>
+        </div>        
+     </div> 
+     
+      
+	</div>
+
+<script type='text/javascript'>
+// <![CDATA[
+    
+    var frmvalidator  = new Validator("changeprofile");
+    frmvalidator.EnableOnPageErrorDisplay();
+    frmvalidator.EnableMsgsTogether();
+
+
+	//frmvalidator.addValidation("phonenumber","numeric","Le format du numéro de téléphone n'est pas valide (exemple : 0612345678)");
+    //frmvalidator.addValidation("name","req","Veuillez indiquer votre nom complet");
+
+// ]]>
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+						   		   
+	//When you click on a link with class of poplight and the href starts with a # 
+	$('a.poplight[href^=#]').click(function() {
+		var popID = $(this).attr('rel'); //Get Popup Name
+		var popURL = $(this).attr('href'); //Get Popup href to define size
+				
+		//Pull Query & Variables from href URL
+		var query= popURL.split('?');
+		var dim= query[1].split('&');
+		var popWidth = dim[0].split('=')[1]; //Gets the first query string value
+
+		//Fade in the Popup and add close button
+		$('#' + popID).fadeIn().css({ 'width': Number( popWidth ) }).prepend('<a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>');
+		
+		//Define margin for center alignment (vertical + horizontal) - we add 80 to the height/width to accomodate for the padding + border width defined in the css
+		var popMargTop = ($('#' + popID).height() + 80) / 2;
+		var popMargLeft = ($('#' + popID).width() + 80) / 2;
+		
+		//Apply Margin to Popup
+		$('#' + popID).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		//Fade in Background
+		$('body').append('<div id="fade"></div>'); //Add the fade layer to bottom of the body tag.
+		$('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn(); //Fade in the fade layer 
+		
+		return false;
+	});
+	
+	
+	//Close Popups and Fade Layer
+	$('a.close, #fade').live('click', function() { //When clicking on the close or fade layer...
+	  	$('#fade , .popup_block').fadeOut(function() {
+			$('#fade, a.close').remove();  
+	}); //fade them both out
+		
+		return false;
+	});
+
+	
+});
+
+</script>
+
+
+	
+</body>
+</html>

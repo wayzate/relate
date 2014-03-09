@@ -1,0 +1,41 @@
+body{
+	background:url(../theme/fond.jpg) top center;
+	margin:0;
+	padding:0;
+	font-family:Myriad Pro Semibold, Trebuchet MS, sans-serif;
+	font-size:20px;
+	color:#1c2d65;
+	}
+	
+#fg_membersite fieldset
+{
+    font-size: 0.9em;
+    line-height: 150%;
+	width:40%;
+	margin:auto;
+	text-align:left;
+	background-color:white;
+	border:1px solid #828181;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+	border-radius: 10px;  
+}
+
+
+#retour
+{
+ 	font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+	width:800px;
+	margin:auto;
+	padding:20px;
+	text-align:center;	
+}
+
+#retour a
+{
+   font-size:14px;
+   font-weight:normal;
+   text-align:center;
+   color:#0a40ef;
+}

@@ -1,0 +1,64 @@
+body{
+	background:url(../theme/fond.jpg) top center;
+	margin:0;
+	padding:0;
+	font-family:Myriad Pro Semibold, Trebuchet MS, sans-serif;
+	font-size:20px;
+	color:#1c2d65;
+	}
+	
+#fg_membersite_content
+{
+    font-size: 0.8em;
+    line-height: 150%;
+	width:800px;
+	margin:auto;
+	text-align:left;
+	text-align:justify;
+	background-color:white;
+	border:1px solid #828181;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+	border-radius: 10px;
+	padding:30px;  
+}
+
+#fg_membersite_content a.gras
+{
+	font-size: 0.8em;
+	font-weight:bold;
+	color:#1c2d65;
+}
+
+
+#fg_membersite_content h2
+{
+   font-size: 1.5em;
+   font-weight:bold;
+   text-align:center;
+   text-decoration:underline
+}
+
+#fg_membersite_content label
+{
+   
+   font-size: 1.2em;
+   font-weight:bold;
+   text-align:left;
+}
+
+#retour
+{
+ 	width:800px;
+	margin:auto;
+	padding:20px;
+	text-align:center;	
+}
+
+#retour a
+{
+   font-size: 0.9em;
+   text-align:center;
+   color:#0a40ef;
+}

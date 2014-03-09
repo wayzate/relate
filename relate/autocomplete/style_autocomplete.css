@@ -1,0 +1,39 @@
+	.suggestionsBox {
+		position: absolute;
+		margin: 10px 0px 10px 0px;
+		width: 270px;
+		background-color: #f5f5f5;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		border: 1px solid #66afe9;	
+		color: #44474e;
+		z-index: 1;
+	}
+	
+	.suggestionList {
+		margin: 0px;
+		padding: 0px;
+		list-style-type: none;
+	}
+	
+	.suggestionList li {
+		
+		margin: 0px 0px 3px 0px;
+		padding: 3px;
+		cursor: pointer;
+	}
+	
+	.suggestionList li:hover {
+		background-color: #66afe9;
+		color: white;
+	}
+	
+	#upArrow{
+	position: relative;
+	top: -13px;
+	left: 5%;
+	font-size: 17px;
+	font-weight: normal;
+	color: #66afe9;
+	z-index: 1;
+	}

@@ -1,0 +1,412 @@
+body{
+	background:url(../theme/fond.jpg) top center;
+	margin:0;
+	padding:0;
+	font-family:Myriad Pro Semibold, Trebuchet MS, sans-serif;
+	font-size:20px;
+	color:#1c2d65;
+	}
+	
+#header{
+	margin:0px auto;
+	padding:0;
+}
+	
+#top{
+	height:95px;
+	min-width:1024px;
+	background:url(../theme/pixelbleumarine.jpg) repeat;
+	}
+
+#topombre{
+	height:15px;
+	min-width:1024px;
+	background:url(../theme/topombre.png) repeat-x top;
+	}
+
+	#textetop{
+	float:right;
+	color:white;
+	height:70;
+	position:relative;
+	top:-170px;
+	right:110px;
+	padding:0;
+	}
+	
+	#bienvenue{
+	font-size:18px; 
+	text-align:right;
+	}
+
+	#deconnexion{
+	margin:20px 0px 0px 0px;
+	font-size:16px; 
+	text-align:right;
+	}
+	
+	#deconnexion a{
+	color:white;
+	text-decoration:none;
+	}
+	
+#item{
+	width:850px;
+	margin:0px auto;
+	}
+	
+	#logo{
+	height:90px;
+	background:url(../theme/logorelate.png) no-repeat left bottom;
+	}	
+	
+#conteneur{
+	width:1024px;
+	margin:-50px auto;
+	}
+	
+#menu{
+	height:90px;
+	min-width:1024px;
+	background-image:url(../theme/contourmenuhautorange.png),url(../theme/contourmenubasorange.png),url(../theme/pixelblanc.jpg);
+	background-position:top,bottom,top;
+	background-repeat:repeat-x,repeat-x,repeat;
+	margin:20px auto;
+	padding:0;
+	}
+	
+	#menu ul{
+	width:1024px;
+	margin:0 auto;
+	min-width:1024px;
+	}
+	
+	#menu ul li{
+	list-style:none;
+	float:left;
+	}
+	
+	#menu ul li a{
+	height:90px;
+	width:68px;
+	font-size:18px;
+	font-weight:semibold;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	background-repeat:no-repeat;
+	line-height:162px;
+	color:#1c2d65;
+	}
+	
+	#menu ul li a.profil{
+	margin:14px 40px 0px 80px;
+	height:49px;
+	width:52px;
+	line-height:119px;
+	background-position:top center;
+	background-image:url(../theme/iconeprofiletudianthover.png);
+	}
+	
+	#menu ul li a.profil:hover{
+	background-position:bottom center;
+	}
+	
+	#menu ul li a.offres{
+	margin:12px 40px 0px 40px;
+	height:50px;
+	width:50px;
+	line-height:121px;
+	background-position:top center;
+	background-image:url(../theme/iconeoffreshover.png);
+	}
+	
+	#menu ul li a.offres:hover{
+	background-position:bottom center;
+	}
+	
+	#menu ul li a.entreprises{
+	width:92px;
+	margin:10px 40px 0px 40px;
+	height:57px;
+	line-height:125px;
+	background-position:top center;
+	background-image:url(../theme/iconeentrepriseshover.png);
+	}
+	
+	#menu ul li a.entreprises:hover{
+	background-position:bottom center;
+	}
+	
+	#menu ul li a.etudiants{
+	margin:10px 40px 0px 40px;
+	height:56px;
+	line-height:125px;
+	background-position:top center;
+	background-image:url(../theme/iconeetudiantshover.png);
+	}
+	
+	#menu ul li a.etudiants:hover{
+	background-position:bottom center;
+	}
+	
+	#menu ul li a.candidatures{
+	width:94px;
+	margin:6px 40px 0px 40px;
+	height:58px;
+	line-height:133px;
+	background-position:top center;
+	background-image:url(../theme/iconecandidatureshover.png);
+	}
+	
+	#menu ul li a.candidatures:hover{
+	background-position:bottom center;
+	}
+	
+	#menu ul li a.messages{
+	margin:15px 40px 0px 40px;
+	height:48px;
+	width:70px;
+	line-height:118px;
+	background-position:top center;
+	background-image:url(../theme/iconemessageshover.png);
+	}
+	
+	#menu ul li a.messages:hover{
+	background-position:bottom center;
+	}
+	
+#bloc{
+	float:left;
+	display:block;
+	height:250px;
+	margin:-50px auto;
+	}
+	
+	#bloc ul li{
+	background:url(../theme/blocallonge.png) no-repeat center;
+	margin:0px 10px 0px 10px;
+	height:300px;
+	width:307px;
+	list-style:none;
+	float:left;
+	padding:0;
+	}
+	
+	#petit{
+	font-size:18px;
+	font-weight:semibold;
+	text-align:center;
+	color:#1c2d65;
+	width:290px;
+	}
+	
+	#bloc ul li a{
+	height:60px;
+	width:270px;
+	margin:50px 0px 0px 8px;
+	font-size:20px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	background:no-repeat center;
+	line-height:25px;
+	color:#1c2d65;
+	}
+	
+#bloc4{
+	margin:70px 0px 0px 0px;
+	float:left;
+	display:block;
+	}	
+	
+#bloc5{
+	float:right;
+	display:block;
+	margin:110px 20px 0px 0px;
+	}	
+	
+#topbloc.bloc4{
+	height:73px;
+	width:590px;
+	margin:44px 0px 0px 58px;
+	background:url(../theme/topbloc.png) no-repeat left;
+	}	
+	
+	#zonetitre{
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	line-height:25px;
+	position:relative;
+	top:12px;
+	}
+	
+#topbloc.bloc5{
+	height:73px;
+	width:307px;
+	background:url(../theme/topbloc.png) no-repeat left;
+	background-size:307px 73px;
+	text-align:center;
+	text-height:center;
+	font-size:20px;
+	font-weight:bold;
+	line-height:25px;
+}
+	
+#contenu.bloc4{
+	width:590px;
+	background:url(../theme/ligne.png) repeat-y center;
+	background-size:582px;
+	margin:0px 0px 0px 58px;
+	padding:0;
+	}
+	
+#contenu.bloc5{
+	width:307px;
+	background:url(../theme/lignepetite.png) repeat-y center;
+	background-size:306px 1px;
+	margin:-2px 0px 0px 0px;
+	padding:5px 0px;
+	}
+	
+	#contenu TABLE{
+	}
+  
+  	#contenu TABLE.bloc5{
+	padding:0px 5px;
+	}
+  
+  	#contenu TABLE#interne{
+	border: 2px solid #5e6c9b;
+	}
+	
+	#contenu TABLE#interne.bloc5{
+	width:300px;
+	margin:0px -8px;
+	}
+	
+	#contenu TABLE TH{
+	width:282px;
+	border-width:0px; 
+	border-style:solid; 
+	border-color:black;
+	padding:5px;
+	text-align:left;
+	}
+	
+	#contenu TABLE TH.gauche{
+	width:70px;
+	}
+	
+	#contenu TABLE TH.dernieresoffres{
+	background:url(../theme/traitsoustitre.png) no-repeat center;
+	background-position:bottom;
+	text-align:center;
+	font-size:17px;
+	font-weight:semibold;
+	}
+	
+	#contenu TABLE TH.evenementsavenir{
+	background:url(../theme/traitsoustitrelong.png) no-repeat center;
+	background-position:bottom;
+	text-align:center;
+	font-size:17px;
+	font-weight:semibold;
+	}
+	
+	#contenu TABLE TH.voirtous{
+	text-align:center;
+	font-size:13px;
+	font-weight:none;
+	}
+	
+	
+	#contenu TABLE TH.voirtous a{
+	font-style:italic;
+	color:#f99a1f;
+	}
+	
+	
+	#contenu TABLE TH.titreoe{
+	font-size:0.8em;
+	font-weight:semibold;
+	text-align:left;
+	}
+	
+	#contenu TABLE TH a.infosoe{
+	font-size:0.75em;
+	text-align:left;
+	}
+	
+	#imagelogo a{
+	height:70px;
+	width:70px;
+	background:url(../theme/logo.jpg) no-repeat left;
+	background-size:70px 70px;
+	display:block;
+	margin:3px;
+	}
+	
+	#imagelogo a.offre1{
+	background-image:url(../theme/logoedf.jpg);
+	}
+	
+	#imagelogo a.offre2{
+	background-image:url(../theme/logoaxa.jpg);
+	}
+	
+	#imagelogo a.offre3{
+	background-image:url(../theme/logoorange.jpg);
+	}
+	
+	#imagelogo a.evenement1{
+	background-image:url(../theme/logochanel.jpg);
+	}
+	
+	#imagelogo a.evenement2{
+	background-image:url(../theme/logoibm.jpg);
+	}
+	
+	#imagelogo a.evenement3{
+	background-image:url(../theme/logogoogle.jpg);
+	}
+	
+	#boutonvoir a{
+	height:18px;
+	width:70px;
+	background:url(../theme/boutonbleuvoir.png) no-repeat left;
+	background-position:top center;
+	font-size:0.7em;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	color:white;
+	margin:3px;
+	}
+	
+	#boutonvoir a:hover{
+	background-position:bottom center;
+	}
+	
+	
+#basbloc.bloc4{
+	height:23px;
+	width:590px;
+	margin:0px 0px 0px 57px;
+	background:url(../theme/basbloc.png) no-repeat center;
+	background-size:584px;
+}
+
+#basbloc.bloc5{
+	height:23px;
+	width:307px;
+	background:url(../theme/basblocpetit.png) no-repeat center;
+	background-size:308px;
+	margin:-1px 0px 0px 0px;
+}
+
+	
+
+	

@@ -1,0 +1,278 @@
+<xml version="1.0" encoding="UTF-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Accueil</title>
+		<link rel="STYLESHEET" type="text/CSS" href=../../bootstrap3/css/bootstrap.css media="screen" />
+		<link rel="STYLESHEET" type="text/CSS" href=../../bootstrap3/css/style-home.css media="screen" />
+		<style type="text/css">a:link{text-decoration:none}</style>
+		<script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
+		<script type="text/javascript" src="../../bootstrap3/js/bootstrap.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	</head>
+
+	<body>
+		
+		<div class="container" id="top_page">
+		
+		<div class="container" id="header_entreprise">
+			<div class="page-header" style="non">
+				<div class="row">
+					<div class="col-md-8">
+						<h1><a href="accueil_entreprise.html">Relate</a></h1>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+							<input type="text" class="form-control" placeholder="Rechercher">
+							</div>
+							<!--<button type="submit" class="btn btn-default">Submit</button>-->
+						</form>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<h4><a href="../index.php">Se déconnecter</a></h4>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<nav class="nav navbar-default" >
+			<div class="navbar-header" id="border_grey">
+				<ul  class="nav nav-justified" id="barre_entreprise">
+							<li><a href="profil_entreprise.html">PROFIL</a></li>
+							<li><a href="offres_entreprise.html">OFFRES</a></li>
+							<li><a href="evenements_entreprise.html">EVENEMENTS</a></li>
+							<li><a href="etudiants_entreprise.html">ETUDIANTS</a></li>
+							<li><a href="candidats.html">CANDIDATS</a></li>
+							<li><a href="stats.html">STATISTIQUES</a></li>
+							<li><a href="messages_recus_entreprise.html">MESSAGES</a></li> 
+				</ul>
+			</div>
+		</nav>
+		<br>
+			
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-4">
+					<a href="offres_entreprise.html">
+						<div class="well" id="padding0">
+							<img src=../../theme/img_offres.jpg class="img-responsive" alt="Responsive image">
+							<div class="padding_well">
+								<h3 id="text_center">Déposez des offres</h3>
+								<p><h5>Publiez et mettez à jour les offres de stage et d'emploi proposées par votre entreprise pour faciliter leur accès par les étudiants.</h5><p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="etudiants_entreprise.html">
+						<div class="well" id="padding0">
+							<img src=../../theme/img_etudiants.png class="img-responsive" alt="Responsive image">
+							<div class="padding_well">
+								<h3 id="text_center">Recherchez des stagiaires</h3>
+								<p><h5>Utilisez notre filtre de recherche multi-critères pour trouver les stagiaires correpondant à vos attentes.</h5><p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="evenements_entreprise.html">
+						<div class="well" id="padding0">
+							<img src=../../theme/img_evenement.jpg class="img-responsive" alt="Responsive image">
+							<div class="padding_well">
+								<h3 id="text_center">Publiez des évènements</h3>
+							<p><h5>Partagez vos actualités et évènements pour augmenter la visibilité de votre entreprise.</h5><p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-8">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 id="text_center">Vos statistiques</h3>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-9">
+									<div id ="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+								</div>
+								<div class="col-md-3">
+									<a href="stats.html">
+										<div class="well">
+										Votre fiche entreprise a déjà été consultée par <b>321</b> étudiants.
+										</div>
+									</a>
+									<a href="#">
+										<div class="well">
+										L'ensemble de vos offres a déjà été consulté <b>644</b> fois.
+										</div>
+									</a>
+									<a href="#">
+										<div class="well">
+										Votre entreprise a déjà reçu <b>12</b> candidatures.
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="panel-footer" id="text_center">
+									<a href="stats.html">
+									<span class="glyphicon glyphicon-play"></span>
+									Plus de statistiques</a>
+							</div>
+							
+						</div>
+				</div>
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Nombre de consultations de vos offres, par type de contrat'
+        },
+        tooltip: {
+    	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    color: '#000000',
+                    connectorColor: '#000000',
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Consultations des offres',
+            data: [
+				{
+                    name: 'Stage',
+                    y: 51.2,
+                    sliced: true,
+                    selected: true
+                },
+                ['CDD',       26.8],
+				['VIE',   12.8],
+                ['CDI',    8.5],
+                ['Alternance',   0.7]
+            ]
+        }]
+    });
+});
+</script>
+				<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 id="text_center">Derniers étudiants inscrits</h3>
+							</div>
+							<div class="panel-body">
+								<a href="etudiant.html">
+									<div class="panel panel-default" id="shadow">
+										<div class="row">
+											<div class="col-md-4">
+												<img src="../../theme/icones/profile_picture.png" alt="..." class="img-thumbnail">
+											</div>
+											<div class="col-md-8">
+												<h5>Prénom Nom</h5>
+												Ecole
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="etudiant.html">
+									<div class="panel panel-default" id="shadow">
+										<div class="row">
+											<div class="col-md-4">
+												<img src="../../theme/icones/profile_picture.png" alt="..." class="img-thumbnail">
+											</div>
+											<div class="col-md-8">
+												<h5>Prénom Nom</h5>
+												Ecole
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="etudiant.html">
+									<div class="panel panel-default" id="shadow">
+										<div class="row">
+											<div class="col-md-4">
+												<img src="../../theme/icones/profile_picture.png" alt="..." class="img-thumbnail">
+											</div>
+											<div class="col-md-8">
+												<h5>Prénom Nom</h5>
+												Ecole
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="etudiant.html">
+									<div class="panel panel-default" id="shadow">
+										<div class="row">
+											<div class="col-md-4">
+												<img src="../../theme/icones/profile_picture.png" alt="..." class="img-thumbnail">
+											</div>
+											<div class="col-md-8">
+												<h5>Prénom Nom</h5>
+												Ecole
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="etudiant.html">
+									<div class="panel panel-default" id="shadow">
+										<div class="row">
+											<div class="col-md-4">
+												<img src="../../theme/icones/profile_picture.png" alt="..." class="img-thumbnail">
+											</div>
+											<div class="col-md-8">
+												<h5>Prénom Nom</h5>
+												Ecole
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="panel-footer" id="text_center">
+								<a href="etudiants_entreprise.html">
+								<span class="glyphicon glyphicon-play"></span>
+								Voir tous les étudiants</a>
+							</div>
+						</div>
+				</div>
+			</div>
+			</div>
+			
+			<nav class="nav navbar-default">
+					<ul  class="nav nav-justified">
+						<li><a href="accueil_entreprise.html">Relate</a></li>
+						<li><a href=#>Copyright 2014</a></li>
+						<li><a href=#>Conditions d'utilisation</a></li>
+						<li><a href=#>Mentions légales</a></li>
+						<li><a href=#>Contactez-nous</a></li>
+						<li><a href=#top_page>Haut de page</a></li>
+					</ul>
+			</nav>
+			
+		</div>
+	
+	</body>
+
+</html>

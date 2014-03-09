@@ -1,0 +1,286 @@
+<xml version="1.0" encoding="UTF-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>Entreprise</title>
+		<link rel="STYLESHEET" type="text/CSS" href="../../bootstrap3/css/bootstrap.css" media="screen" />
+		<link rel="STYLESHEET" type="text/CSS" href=../../bootstrap3/css/style-home.css media="screen" />
+		<style type="text/css">a:link{text-decoration:none}</style>
+		<style type="text/css">ul{list-style-type: none} </style>
+		<style type="text/css">
+		  #map-canvas { width:100%; height:75%; }
+		</style>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.js"></script>
+		<script type="text/javascript" src="../../bootstrap3/js/bootstrap.js"></script>
+		
+	</head>
+
+	<body>
+		
+	<div class="container" id="top_page">
+		
+		<div class="container">
+			<div class="page-header">
+				<div class="row">
+					<div class="col-md-8">
+						<h1><a href="accueil_etudiant.php">Relate</a></h1>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+							<input type="text" class="form-control" placeholder="Rechercher">
+							</div>
+							<!--<button type="submit" class="btn btn-default">Submit</button>-->
+						</form>
+					</div>
+					<div class="col-md-2">
+						<br>
+						<h4><a href="../index.php">Se déconnecter</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<nav class="nav navbar-default" role="navigation">
+			<div class="navbar-header">
+				<!--<ul class="nav navbar-nav">-->
+				<ul class="nav nav-justified">
+							<li><a href="profil_etudiant.html">
+								<ul><li class="menu" id="menu_profil"></li>
+									<li>PROFIL</li>
+								</ul>
+								</a>
+							</li>
+							<li><a href="offres.php">
+								<ul><li class="menu" id="menu_offres"></li>
+									<li>OFFRES</li>
+								</ul>
+								</a>
+							</li>
+							<li class="active"><a href="entreprises.php">
+								<ul><li class="menu" id="menu_entreprises"></li>
+									<li>ENTREPRISES</li>
+								</ul>
+								</a>
+							</li>
+							<li><a href="etudiants.php">
+								<ul><li class="menu" id="menu_etudiants"></li>
+									<li>ETUDIANTS</li>
+								</ul>
+								</a>
+							</li>
+							<li><a href="candidatures.html">
+								<ul><li class="menu" id="menu_candidatures"></li>
+									<li>CANDIDATURES</li>
+								</ul>
+								</a>
+							</li>
+							<li><a href="messages_recus.php">
+								<ul><li class="menu" id="menu_messages"></li>
+									<li>MESSAGES</li>
+								</ul>
+								</a>
+							</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<br>
+			
+		<div class="container">
+			
+			
+		<div class="row">
+			<div class="col-md-9">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+											<ul class="nav navbar-nav navbar-right">
+												<li>
+													<div class="btn-group">
+														<a href="offres.html">
+															<button type="button" class="btn btn-success">Voir les offres
+															<span class="glyphicon glyphicon-folder-open">
+															</button>
+														</a>
+														<a href="evenements.html">
+															<button type="button" class="btn btn-primary">Voir les évènements
+															<span class="glyphicon glyphicon-bullhorn">
+															</button>
+														</a>
+													</div>
+												</li>
+											</ul>
+										<h3>Raison sociale</h3>
+									</div>
+									<div class="panel-body">
+							<div class="list-group">
+								<h4 class="list-group-item-heading">Informations générales de l'entreprise</h4>
+										<ul>
+											<li><div class="col-md-6">Raison sociale</div>
+												<div class="col-md-6">EDF</div>
+											</li>
+											<li><div class="col-md-6">Secteur d'activité</div>
+												<div class="col-md-6">Energie/Environnement</div>
+											</li>
+											<li><div class="col-md-6">Effectif</div>
+												<div class="col-md-6">10000</div>
+											</li>
+											<li><div class="col-md-6">Adresse postale</div>
+												<div class="col-md-6">13 avenue Morane Solnier 
+																	<br>78942 Vélizy Villacoublay
+																	  <a href="#map-canvas" class="glyphicon glyphicon-globe" id="map-click"></a>
+												</div>
+											</li>
+											<li><div id="map-canvas"></div>
+											</li>
+											<li><div class="col-md-6">Téléphone</div>
+												<div class="col-md-6">0912345678</div>
+											</li>
+											<li><div class="col-md-6">Adresse mail</div>
+												<div class="col-md-6">edf@contact.com</div>
+											</li>
+											<li><div class="col-md-6">Site web</div>
+												<div class="col-md-6"><a href="http://www.edf.com" target="_blank">www.edf.com</a></div>
+											</li>
+										</ul>
+<script type="text/javascript">
+window.onload = function(){
+$("#map-canvas").hide();
+};	
+
+var geocoder;
+var map;
+ 
+function initialize() {
+		geocoder = new google.maps.Geocoder();
+		var latlng = new google.maps.LatLng(48.833, 2.333);
+        var mapOptions = {
+          center: latlng,
+          zoom: 10
+        };
+        map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+      }
+	  
+function codeAddress() {
+	//Prendre l'adresse figurant directement dans la BDD
+	var address_entreprise = "13 avenue Morane Solnier 78942 Vélizy Villacoublay";
+	var address = address_entreprise;
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        map.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+        });
+      } else {
+        alert("Geocode was not successful for the following reason: " + status);
+      }
+    });
+  }
+	  
+$("#map-click").click(function(){
+	if ($("#map-canvas").css('display') == 'none') {
+		$("#map-canvas").show();
+	}
+	else {
+		$("#map-canvas").hide();
+	}
+	initialize();
+	codeAddress();
+});	
+</script>
+								
+								<h4 class="list-group-item-heading">Description de l'entreprise</h4>
+										
+											<h5>Présentation de l'entreprise</h5>
+												<div class="panel panel-default">
+													<div class="panel-body">
+													Bla bla bla
+													</div>
+												</div>
+											<h5>Activité</h5>
+												<div class="panel panel-default">
+													<div class="panel-body">
+													Bla bla bla
+													</div>
+												</div>
+											<h5>Organisation</h5>
+												<div class="panel panel-default">
+													<div class="panel-body">
+													Bla bla bla
+													</div>
+												</div>
+											<h5>Vision</h5>
+												<div class="panel panel-default">
+													<div class="panel-body">
+													Bla bla bla
+													</div>
+												</div>
+										
+							</div>
+							</div>
+									<div class="panel-footer">
+											<a href="entreprises.html">
+											<span class="glyphicon glyphicon-play"></span>
+											Retour aux entreprises</a> 
+									</div>
+								</div>	
+			</div>
+
+			<div class="col-md-3">
+					<!--<a href=#>
+						<div class="well">
+							<div>
+								<h3>Recherchez une offre</h3>
+							<p><h5>Recherchez et postulez aux offres de stage ou d'emploi correspondant à vos critères.</h5><p>
+							</div>
+						</div>
+					</a>-->
+					
+					<a href="evenements.html">
+						<div class="well">
+							<div>
+								<h3>Parcourez les évènements des entreprises</h3>
+							<p><h5>Prenez connaissance des évènements et actualités des entreprises.</h5><p>
+							</div>
+						</div>
+					</a>
+					
+					<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3>Suggestion d'entreprises</h3>
+							</div>
+							<div class="panel-body">
+								<a href="entreprise.html"><div class="panel panel-default" id="shadow"><img src="..." alt="..." class="img-thumbnail">Entreprise 1</div></a>
+								<a href="entreprise.html"><div class="panel panel-default" id="shadow"><img src="..." alt="..." class="img-thumbnail">Entreprise 2</div></a>
+								<a href="entreprise.html"><div class="panel panel-default" id="shadow"><img src="..." alt="..." class="img-thumbnail">Entreprise 3</div></a>
+							</div>
+					</div>
+			</div>
+			
+		</div>
+			
+			<nav class="nav navbar-default">
+				
+					<ul  class="nav nav-justified">
+						<li><a href="accueil_etudiant.html">Relate</a></li>
+						<li><a href=#>Copyright 2014</a></li>
+						<li><a href=#>Conditions d'utilisation</a></li>
+						<li><a href=#>Mentions légales</a></li>
+						<li><a href=#>Contactez-nous</a></li>
+						<li><a href=#top_page>Haut de page</a></li>
+					</ul>
+					
+			</nav>
+			
+		</div>
+	</body>
+
+</html>

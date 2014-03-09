@@ -1,0 +1,268 @@
+	#bloc{
+	float:left;
+	display:block;
+	margin:auto;
+	}
+	
+	#bloc ul li{
+	margin:0px 10px 0px 10px;
+	width:300px;
+	list-style:none;
+	float:left;
+	padding:0;
+	border:1px solid #a1a2a3;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0px 0px 7px #bbb; /* les parametres sont : marge gauche, haute, l'etendu et la couleur*/
+	-o-box-shadow: 0px 0px 7px #bbb;
+	-webkit-box-shadow: 0px 0px 7px #bbb;
+	background-color:white;
+	}
+	
+	#bloc ul li:hover{
+	-moz-box-shadow: 0px 0px 8px #3659b7;
+	-o-box-shadow: 0px 0px 8px #3659b7;
+	-webkit-box-shadow: 0px 0px 8px #3659b7;
+	}
+	
+	#petit{
+	font-size:16px;
+	text-align:left;
+	color:#545657;
+	width:270px;
+	margin-left:15px;
+	}
+	
+	#bloc ul li a{
+	margin:30px 0px 0px 0px;
+	font-size:19px;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	line-height:25px;
+	color:#1c2d65;
+	}
+	
+	.img1{
+	margin-top:-30px;
+	margin-bottom:15px;
+	height:150px;
+	width:300px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	-khtml-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	background-image:url(../theme/img_etudiant.png);
+	background-size:499px 150px;
+	background-position:right;
+	border-bottom:4px solid #3659b7;	
+	}
+	
+	.img2{
+	margin-top:-30px;
+	margin-bottom:15px;
+	height:150px;
+	width:300px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	-khtml-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	background-image:url(../theme/img_clavier.png);
+	background-size:300px 150px;
+	border-bottom:4px solid #35d30b;	
+	}
+	
+	.img3{
+	margin-top:-30px;
+	margin-bottom:15px;
+	height:150px;
+	width:300px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	-khtml-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	background-image:url(../theme/img_entreprise.png);
+	border-bottom:4px solid #d30b81;	
+	}
+	
+#blocbas{
+	margin-top:50px;
+	float:left;
+	display:block;
+	border:1px solid #a1a2a3;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0px 0px 7px #bbb; /* les parametres sont : marge gauche, haute, l'etendu et la couleur*/
+	-o-box-shadow: 0px 0px 7px #bbb;
+	-webkit-box-shadow: 0px 0px 7px #bbb;
+	background-color:white;
+	}	
+	
+#blocbas:hover{
+	-moz-box-shadow: 0px 8px 0px #3659b7;
+	-o-box-shadow: 0px 0px 8px #3659b7;
+	-webkit-box-shadow: 0px 0px 8px #3659b7;
+	}
+	
+#blocbas.bloc4{
+	margin-left:38px;
+	}
+	
+#blocbas.bloc5{
+	margin-left:20px;
+	}	
+	
+	.zonetitre{
+	text-align:center;
+	font-size:19px;
+	line-height:25px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:0px;
+	paddng-right:0px;
+	border-bottom:1px solid #a1a2a3;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;;
+	-khtml-border-radius: 10px 10px 0px 0px;;
+	border-radius: 8px 8px 0px 0px;;
+	background-image:radial-gradient(white,#c9d3ec);
+	}
+	
+	#contenu TABLE{
+	padding-left:15px;
+	padding-right:15px;
+	}
+	
+	#contenu TABLE.bloc5{
+	padding-top:14px;
+	}
+	
+  
+  	#contenu TABLE#interne{
+	border: 1px solid #a1a2a3;
+	padding:0;
+	}
+	
+	#contenu TABLE#interne:hover{
+	-moz-box-shadow: 0px 0px 2px #3659b7;
+	-o-box-shadow: 0px 0px 2px #3659b7;
+	-webkit-box-shadow: 0px 0px 2px #3659b7;
+	}
+	
+	#contenu TABLE TH{
+	width:282px;
+	border-width:0px; 
+	border-style:solid; 
+	border-color:black;
+	padding:5px;
+	text-align:left;
+	}
+	
+	#contenu TABLE TH.gauche{
+	width:70px;
+	}
+	
+	#contenu TABLE TH.dernieresoffres{
+	padding-top:20px;
+	padding-bottom:10px;
+	text-align:center;
+	font-size:17px;
+	font-weight:normal;
+	color:#1c2d65;
+	/*border-bottom:2px solid #1c2d65;*/
+	}
+	
+	#contenu TABLE TH.evenementsavenir{
+	padding-top:20px;
+	padding-bottom:10px;
+	text-align:center;
+	font-size:17px;
+	font-weight:normal;
+	color:#1c2d65;
+	/*border-bottom:2px solid #1c2d65;*/
+	}
+	
+	#contenu TABLE TH.voirtous{
+	text-align:center;
+	font-size:13px;
+	font-weight:none;
+	color:#545657;
+	font-weight:normal;
+	}
+	
+	
+	#contenu TABLE TH.voirtous a{
+	font-style:italic;
+	color:#f99a1f;
+	}
+	
+	
+	#contenu TABLE TH.titreoe{
+	font-size:0.8em;
+	font-weight:normal;
+	text-align:left;
+	color:#545657;
+	}
+	
+	#contenu TABLE TH a.infosoe{
+	font-size:0.75em;
+	text-align:left;
+	color:#545657;
+	font-weight:normal;
+	}
+	
+	#imagelogo a{
+	height:70px;
+	width:70px;
+	background:url(../theme/logo.jpg) no-repeat left;
+	background-size:70px 70px;
+	display:block;
+	margin:3px;
+	}
+	
+	#imagelogo a.offre1{
+	background-image:url(../theme/logoedf.jpg);
+	}
+	
+	#imagelogo a.offre2{
+	background-image:url(../theme/logoaxa.jpg);
+	}
+	
+	#imagelogo a.offre3{
+	background-image:url(../theme/logoorange.jpg);
+	}
+	
+	#imagelogo a.evenement1{
+	background-image:url(../theme/logochanel.jpg);
+	}
+	
+	#imagelogo a.evenement2{
+	background-image:url(../theme/logoibm.jpg);
+	}
+	
+	#imagelogo a.evenement3{
+	background-image:url(../theme/logogoogle.jpg);
+	}
+	
+	#boutonvoir a{
+	height:18px;
+	width:70px;
+	background:url(../theme/boutonbleuvoir.png) no-repeat left;
+	background-position:top center;
+	font-size:0.7em;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	color:white;
+	margin:3px;
+	}
+	
+	#boutonvoir a:hover{
+	background-position:bottom center;
+	}
+	
+	

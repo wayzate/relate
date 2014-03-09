@@ -1,0 +1,187 @@
+#titre{
+	float:right;
+	width:824px;
+	position:relative;
+	top:40px;
+	left:60px;
+	font-size:24px;
+	font-weight:semibold;
+	text-align:left;
+	color:#1c2d65;
+	background:url(../theme/traittitre.png) no-repeat left bottom;
+	}	
+
+#nouveau a{
+	float:right;
+	width:220px;
+	height:32px;
+	margin-bottom:5px;
+	background-image:radial-gradient(white,#c9d3ec);
+	border:1px solid #a1a2a3;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	padding-left:5px;
+	padding-right:5px;
+	text-decoration:none;
+	font-size:15px;
+	text-align:center;
+	line-height:32px;
+	color:#1c2d65;
+	/*background:url(../theme/boutonfleche.png) no-repeat right;*/
+}
+
+#nouveau a:hover{
+	-moz-box-shadow: 0px 2px 0px #3659b7;
+	-o-box-shadow: 0px 0px 2px #3659b7;
+	-webkit-box-shadow: 0px 0px 2px #3659b7;
+	}
+	
+
+#menumessages{
+	height:39px;
+	margin:auto;
+	padding:0;
+	list-style:none;
+	position:relative;
+	top:60px;
+	left:60px;
+	}
+	
+	#menumessages ul{
+	margin:auto;
+	list-style:none;
+	}
+	
+	#menumessages ul li{
+	list-style:none;
+	height:40px;
+	width:206px;
+	float:left;
+	list-style:none;
+	background:url(../theme/menumessage.jpg) no-repeat top center;
+	background-size:205px 80px;
+	padding:0;
+	}
+	
+	#menumessages ul li a{
+	height:40px;
+	width:206px;
+	font-size:16px;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:center;
+	line-height:40px;
+	display:block;
+	color:white;
+	list-style:none;
+	padding:0;
+	}
+	
+	#menumessages ul li:hover{
+	background-position:bottom center;
+	}
+	
+	#menumessages ul li a.actif{
+	font-size:16px;
+	width:206px;
+	background:url(../theme/menumessage.jpg) no-repeat bottom center;
+	background-size:205px 80px;
+	}
+
+
+#nouveaumessage
+{
+	float:left;
+	margin:auto;
+	width:819px;
+	height:auto;
+	padding:0;
+	position:relative;
+	top:106px;
+	left:100px;
+	text-align:left;
+	background-color:white;
+	border:1px solid #a1a2a3;
+	/*-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;*/
+}
+
+#nouveaumessage fieldset
+{
+   padding:15px;
+   border:none; 
+}
+
+#nouveaumessage legend
+{
+   padding-top:10px; 
+}
+
+#nouveaumessage label
+{
+   font-family : Myriad Pro Semibold, Trebuchet MS, sans-serif;
+   font-size:16px;
+   font-weight:normal;
+   color:#545657;
+}
+
+#nouveaumessage textarea
+{
+  height:auto;
+  width:785px;
+  background-color:#f7f7f7;
+  border:1px solid #a1a2a3;
+  padding:5px;
+}
+
+#nouveaumessage input[type="text"]
+{
+  height:auto;/*36px;*/
+  width:785px;
+  background-color:#f7f7f7;
+  border:1px solid #a1a2a3;
+  padding:5px;
+ 
+}
+
+#nouveaumessage input[type="text"],
+#nouveaumessage input[type="text"]:focus,
+#nouveaumessage textarea,
+#nouveaumessage textarea:focus,
+#nouveaumessage_content
+{
+  font-family:Arial;
+  color:black;
+  padding:5px;
+}
+
+
+#nouveaumessage input[type="submit"].boutonvalider
+{
+   width:100px;
+   margin-top:15px;
+   margin-bottom:-20px;
+   height:35px;
+   padding-left:0px;
+   background-color:transparent;
+   background:url(../theme/boutonvalider.png) no-repeat top center;
+   background-size:100px 70px;
+   border:none;
+   cursor: pointer;
+   font-family : Arial, sans-serif;
+   font-size:16px;
+   font-weight:semibold;
+   color: #1c2d65;
+   padding:0px 0px 3px 20px;
+}
+
+#nouveaumessage input[type="submit"].boutonvalider:hover
+{
+	background-position: bottom center;
+	color:white;
+}
+	

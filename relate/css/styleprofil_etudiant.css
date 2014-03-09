@@ -1,0 +1,149 @@
+#titre{
+	float:right;
+	width:824px;
+	height:40px;
+	position:relative;
+	top:40px;
+	left:60px;
+	font-size:24px;
+	font-weight:semibold;
+	text-align:left;
+	color:#1c2d65;
+	background:url(../theme/traittitre.png) no-repeat left bottom;
+	}	
+	
+#rangee{
+	float:right;
+	width:180px;
+	padding-top:62px;
+	padding-right:0px;
+	}
+
+#bloc{
+	display:block;
+	padding:0;
+	}
+	
+#petit{
+	width:200px;
+	font-size:16px;
+	font-weight:normal;
+	text-align:center;
+	color:#1c2d65;
+	padding-left:10px;
+	padding-top:7px;
+	padding-bottom:7px;
+	}
+	
+#bloc .bloccompte a{
+	height:50px;
+	width:180px;
+	margin:auto;
+	padding:0;
+	font-size:16px;
+	font-weight:normal;
+	text-align:center;
+	text-decoration:none;
+	color:#1c2d65;
+    border:1px solid #a1a2a3;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+}
+	
+#bloc .hautbloc1{
+	height:30px;
+	width:250px;
+	background:url(../theme/rangeetop.png);
+	background-size:250px 30px;
+	background-repeat: no-repeat;
+	background-position:top;
+}
+	
+#bloc .bloc1{
+	height:120px;
+	width:250px;
+	background:url(../theme/lignerangee.png);
+	background-size:252px 1px;
+	background-repeat:repeat-y;
+	background-position:center;
+	font-size:18px;
+	font-weight:semibold;
+	color:#1c2d65;
+	text-align:center;
+}
+
+#bloc .bloccompte{
+	height:120px;
+	width:250px;
+	background:url(../theme/lignerangee.png);
+	background-size:252px 1px;
+	background-repeat:repeat-y;
+	background-position:center;
+	font-size:18px;
+	font-weight:semibold;
+	color:#1c2d65;
+	text-align:center;
+}
+
+#bloc .bloc1 a{
+	height:180px;
+	width:230px;
+	font-size:18px;
+	font-weight:semibold;
+	text-decoration:none;
+	text-align:center;
+	color:#1c2d65;
+	padding-left:12px;
+	padding-top:0;
+}
+
+#bloc .basbloc1{
+	height:30px;
+	width:250px;
+	background:url(../theme/rangeebas.png);
+	background-size:250px 30px;
+	background-repeat: no-repeat;
+	background-position:bottom;
+}
+
+	#bloc a{
+	padding-top:50px;
+	height:60px;
+	width:270px;
+	font-size:20px;
+	font-weight:semibold;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	line-height:25px;
+	color:#1c2d65;
+	}	
+
+	#imagelogo a{
+	height:70px;
+	width:70px;
+	background:url(../theme/logo.jpg) no-repeat left;
+	background-size:70px 70px;
+	display:block;
+	margin:3px;
+	}
+	
+	#boutonvoir a{
+	height:18px;
+	width:70px;
+	background:url(../theme/boutonbleuvoir.png) no-repeat left;
+	background-position:top center;
+	font-size:0.7em;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	color:white;
+	margin:3px;
+	}
+	
+	#boutonvoir a:hover{
+	background-position:bottom center;
+	}
+	
